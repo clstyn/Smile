@@ -3,5 +3,5 @@ Aplikasi Smile untuk membantu mahasiswa dalam menyeimbangkan kembali mood serta 
 
 SMILE
 
-Anggota 1 : Aditya Ramadhan - 20/460535/TK/51124
+Anggota 1: Aditya Ramadhan-20/460535/TK/51124
 
