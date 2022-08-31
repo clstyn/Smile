@@ -4,3 +4,6 @@ Aplikasi Smile untuk membantu mahasiswa dalam menyeimbangkan kembali mood serta 
 SMILE
 Ketua Kelompok: Michael Hamonangan Sitorus
 
+Anggota 2: Fiorenza Celestyn
+
+
