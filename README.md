@@ -3,8 +3,8 @@ Aplikasi Smile untuk membantu mahasiswa dalam menyeimbangkan kembali mood serta 
 
 SMILE
 
-Ketua Kelompok: Michael Hamonangan Sitorus - 20/460552/TK/51141
+Ketua Kelompok: 
 
-Anggota 1: Aditya Ramadhan-20/460535/TK/51124
+Anggota 1: 
 
-Anggota 2: Fiorenza Celestyn - 20/460545/TK/51134
+Anggota 2: 
