@@ -4,6 +4,8 @@ Aplikasi Smile untuk membantu mahasiswa dalam menyeimbangkan kembali mood serta 
 
 SMILE
 
-Ketua Kelompok:  
-Anggota 1:  
+Ketua Kelompok:
+
+Anggota 1:
+
 Anggota 2: Fiorenza Celestyn - 20/460545/TK/51134
