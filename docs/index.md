@@ -30,3 +30,6 @@ dapat membantu meredakan stress dan manajemen aktivitas serta mood mahasiswa.
 ### Aplikasi serupa
 - Calm
 - Tochi - Mood Tracker
+
+### Use Case Diagram
+![Use Case](https://user-images.githubusercontent.com/78774670/189488777-54dc741b-8449-4a04-b033-727285075bcb.jpg)
