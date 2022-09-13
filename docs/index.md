@@ -36,17 +36,26 @@ dapat membantu meredakan stress dan manajemen aktivitas serta mood mahasiswa.
 
 ### Activity Diagram
 #### Sign Up
+![signup](https://user-images.githubusercontent.com/72853893/189906005-8b1b4f92-a569-4722-8cfb-14c2cadf9344.png)
+
 #### Fill quetioner
+![fillquetioner](https://user-images.githubusercontent.com/72853893/189906273-d137a4c9-6b94-443c-b995-f5a2f7487b33.png)
+
 #### Get quetioner result
+![getquetionerresult](https://user-images.githubusercontent.com/72853893/189906461-857b766b-86c6-4743-8fe4-5e5609c15f66.png)
+
 #### Play relaxing audio
+![playrelaxingaudio](https://user-images.githubusercontent.com/72853893/189906579-3c13aa1c-369d-466b-8e01-cfe437027616.png)
+
 #### Sign In
 ![signin](https://user-images.githubusercontent.com/78774670/189815732-fd5b1c1e-a3e7-41aa-9541-2525d6bb6f0f.png)
 
 #### Save quetioner result
+![savequetionerresult](https://user-images.githubusercontent.com/72853893/189906693-38d3c1f0-8cb2-4d2e-aed0-c80ef1074735.png)
 
 
 #### Display weekly result graph
-
+![displayweeklyresultgraph](https://user-images.githubusercontent.com/72853893/189906856-41344f8d-a322-43b1-af48-3c83365a1d91.png)
 
 #### Use scheduler
 ![scheduler](https://user-images.githubusercontent.com/78774670/189815785-dcc55ea1-946f-47b3-bfca-73c75b51d61a.png)
