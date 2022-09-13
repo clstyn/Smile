@@ -32,4 +32,24 @@ dapat membantu meredakan stress dan manajemen aktivitas serta mood mahasiswa.
 - Tochi - Mood Tracker
 
 ### Use Case Diagram
-![Use Case](https://user-images.githubusercontent.com/78774670/189488777-54dc741b-8449-4a04-b033-727285075bcb.jpg)
+![usecase](https://user-images.githubusercontent.com/78774670/189815637-2148df32-4a0b-4320-8c01-e62a50e74ac9.jpg)
+
+### Activity Diagram
+#### Sign Up
+#### Fill quetioner
+#### Get quetioner result
+#### Play relaxing audio
+#### Sign In
+![signin](https://user-images.githubusercontent.com/78774670/189815732-fd5b1c1e-a3e7-41aa-9541-2525d6bb6f0f.png)
+
+#### Save quetioner result
+
+
+#### Display weekly result graph
+
+
+#### Use scheduler
+![scheduler](https://user-images.githubusercontent.com/78774670/189815785-dcc55ea1-946f-47b3-bfca-73c75b51d61a.png)
+
+#### Get Schedule Recommendation
+![getrecom](https://user-images.githubusercontent.com/78774670/189815837-d43cf5ee-76c2-49bf-81dd-db953ebae130.png)
