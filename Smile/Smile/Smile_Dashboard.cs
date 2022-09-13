@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace Smile
 {
-    public partial class Form1 : Form
+    public partial class Smile_Dashboard : Form
     {
-        public Form1()
+        public Smile_Dashboard()
         {
             InitializeComponent();
         }
 
+        private void Smile_Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

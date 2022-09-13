@@ -10,5 +10,13 @@ namespace Smile
     {
         public int qID;
         public string qQuestion;
+        public int[] qPoint;
+
+        public int calculatePoint()
+        {
+            int totalPoint = 0;
+            //code here
+            return totalPoint;
+        }
     }
 }

@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Smile
 {
-    class QResult
+    public class QResult
     {
+        public int qrID;
+        public int qrTotalPoint;
+        public int[] qrDetailPoint;
+        public DateTime qrDate;
+        public string qrDesc;
+
+        public void displayResult()
+        {
+
+        }
     }
 }
