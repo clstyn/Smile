@@ -36,28 +36,28 @@ dapat membantu meredakan stress dan manajemen aktivitas serta mood mahasiswa.
 
 ### Activity Diagram
 #### Sign Up
-<img src="https://user-images.githubusercontent.com/72853893/189907114-944ff621-73bc-47d9-90d4-139c75ca83d0.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/72853893/189907114-944ff621-73bc-47d9-90d4-139c75ca83d0.png" width="150px">
 
 #### Fill quetioner
-<img src="https://user-images.githubusercontent.com/72853893/189907215-91621286-2aea-48aa-8272-c77a8e202a3e.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/72853893/189907215-91621286-2aea-48aa-8272-c77a8e202a3e.png" width="150px">
 
 #### Get quetioner result
-<img src="https://user-images.githubusercontent.com/72853893/189906461-857b766b-86c6-4743-8fe4-5e5609c15f66.png" width="200px"></img>
+<img src="https://user-images.githubusercontent.com/72853893/189906461-857b766b-86c6-4743-8fe4-5e5609c15f66.png" width="200px">
 
 #### Play relaxing audio
-<img src="https://user-images.githubusercontent.com/72853893/189906579-3c13aa1c-369d-466b-8e01-cfe437027616.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/72853893/189906579-3c13aa1c-369d-466b-8e01-cfe437027616.png" width="150px">
 
 #### Sign In
-<img src="https://user-images.githubusercontent.com/78774670/189815732-fd5b1c1e-a3e7-41aa-9541-2525d6bb6f0f.png" width="200px"></img>
+<img src="https://user-images.githubusercontent.com/78774670/189815732-fd5b1c1e-a3e7-41aa-9541-2525d6bb6f0f.png" width="200px">
 
 #### Save quetioner result
-<img src="https://user-images.githubusercontent.com/72853893/189907306-dae8cff1-f181-40ed-b70b-f3c5a3c34c0f.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/72853893/189907306-dae8cff1-f181-40ed-b70b-f3c5a3c34c0f.png" width="150px">
 
 #### Display weekly result graph
-<img src="https://user-images.githubusercontent.com/72853893/189906856-41344f8d-a322-43b1-af48-3c83365a1d91.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/72853893/189906856-41344f8d-a322-43b1-af48-3c83365a1d91.png" width="150px">
 
 #### Use scheduler
-<img src="https://user-images.githubusercontent.com/78774670/189815785-dcc55ea1-946f-47b3-bfca-73c75b51d61a.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/78774670/189815785-dcc55ea1-946f-47b3-bfca-73c75b51d61a.png" width="150px">
 
 #### Get Schedule Recommendation
-<img src="https://user-images.githubusercontent.com/78774670/189815837-d43cf5ee-76c2-49bf-81dd-db953ebae130.png" width="150px"></img>
+<img src="https://user-images.githubusercontent.com/78774670/189815837-d43cf5ee-76c2-49bf-81dd-db953ebae130.png" width="150px">
