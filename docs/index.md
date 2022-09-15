@@ -61,3 +61,7 @@ dapat membantu meredakan stress dan manajemen aktivitas serta mood mahasiswa.
 
 #### Get Schedule Recommendation
 <img src="https://user-images.githubusercontent.com/78774670/189815837-d43cf5ee-76c2-49bf-81dd-db953ebae130.png" width="150px">
+
+### Class Diagram
+<img src="https://user-images.githubusercontent.com/78774670/190299527-361e3fda-c8c3-4dde-b282-10907d992efa.jpg">
+
