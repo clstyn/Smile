@@ -65,3 +65,7 @@ dapat membantu meredakan stress dan manajemen aktivitas serta mood mahasiswa.
 ### Class Diagram
 <img src="https://user-images.githubusercontent.com/78774670/190299527-361e3fda-c8c3-4dde-b282-10907d992efa.jpg">
 
+### ERD
+<img src="https://user-images.githubusercontent.com/78774670/193304289-3f126398-cd56-46b1-b889-e6d773e282d6.jpg">
+
+
