@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Smile
 {
-    public partial class Smile_Questioner : Form
+    public partial class Smile_SignUp : Form
     {
-        public Smile_Questioner()
+        public Smile_SignUp()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace Smile
         private void btnSmile_Click(object sender, EventArgs e)
         {
             Smile_Dashboard.dashboard.Show();
+            this.Dispose();
+        }
+
+        private void btnNewAccount_Click(object sender, EventArgs e)
+        {
+            Smile_Login login = new Smile_Login();
+            login.Show();
             this.Dispose();
         }
     }

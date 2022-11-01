@@ -1,10 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="PopUp\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="PopUp\startQuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QuestionPage\qPage1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Smile_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Smile_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Smile_Music.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Smile_Questioner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Smile_SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

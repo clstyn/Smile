@@ -23,10 +23,12 @@ namespace Smile
         public string usrEmail_
         {
             set { this.usrUname = value; }
+            get { return usrName; }
         }
         public string usrPassword_
         {
             set { this.usrPassword = value; }
+            get { return usrName; }
         }
     }
 }

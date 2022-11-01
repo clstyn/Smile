@@ -8,9 +8,9 @@ namespace Smile
 {
     public class Questioner
     {
-        public int qID;
-        public string qQuestion;
-        public int[] qPoint;
+        public int ID { get; set; }
+        public string Question { get; set; }
+        public int[] Point { get; set; }
 
         public int calculatePoint()
         {
