@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Smile
 {
-    public partial class Smile_Questioner : Form
+    public partial class Smile_Music : Form
     {
-        public Smile_Questioner()
+        public Smile_Music()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Smile
         private void btnSmile_Click(object sender, EventArgs e)
         {
             Smile_Dashboard.dashboard.Show();
-            this.Dispose();
+            this.Hide();
         }
     }
 }

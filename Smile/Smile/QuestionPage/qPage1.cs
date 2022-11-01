@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Smile
+namespace Smile.QuestionPage
 {
-    public partial class Smile_Questioner : Form
+    public partial class qPage1 : UserControl
     {
-        public Smile_Questioner()
+        public qPage1()
         {
             InitializeComponent();
-        }
-
-        private void btnSmile_Click(object sender, EventArgs e)
-        {
-            Smile_Dashboard.dashboard.Show();
-            this.Dispose();
         }
     }
 }
