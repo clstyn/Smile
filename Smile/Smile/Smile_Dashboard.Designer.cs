@@ -162,6 +162,7 @@ namespace Smile
             this.btnHappy.TabIndex = 7;
             this.btnHappy.TabStop = false;
             this.btnHappy.Click += new System.EventHandler(this.btnEmote_Click);
+            this.btnHappy.MouseHover += new System.EventHandler(this.emoteHover);
             // 
             // label2
             // 
@@ -185,7 +186,7 @@ namespace Smile
             this.btnSong1.Size = new System.Drawing.Size(120, 150);
             this.btnSong1.TabIndex = 9;
             this.btnSong1.TabStop = false;
-            this.btnSong1.Click += new System.EventHandler(this.e);
+            this.btnSong1.Click += new System.EventHandler(this.btnSong_Click);
             // 
             // btnSong2
             // 
@@ -240,7 +241,7 @@ namespace Smile
             this.gradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
             this.gradientPanel1.Location = new System.Drawing.Point(-2, 0);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1071, 57);
+            this.gradientPanel1.Size = new System.Drawing.Size(1071, 72);
             this.gradientPanel1.TabIndex = 15;
             // 
             // panel1

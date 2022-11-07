@@ -8,27 +8,17 @@ namespace Smile
 {
     public class UserAccount: User
     {
-        private string usrUname;
-        private string usrPassword;
+        private string username;
+        private string password;
 
-        public void credentialCheck()
-        {
+        public string Username { set => username = value; }
+        public string Password { set => password = value; }
 
-        }
-        public UserAccount(string usrUname, string usrPassword)
+        public UserAccount(string Username, string Password)
         {
-            this.usrUname = usrUname;
-            this.usrPassword = usrPassword;
+            this.Username = Username;
+            this.Password = Password;
         }
-        public string usrEmail_
-        {
-            set { this.usrUname = value; }
-            get { return usrName; }
-        }
-        public string usrPassword_
-        {
-            set { this.usrPassword = value; }
-            get { return usrName; }
-        }
+        public UserAccount() { }
     }
 }

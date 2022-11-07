@@ -19,7 +19,15 @@ namespace Smile
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             UserAccount userAcc = new UserAccount(tbUsername.Text, tbPassword.Text);
-            userAcc.credentialCheck();
+            if (userAcc.credentialCheck())
+            {
+                Smile_Dashboard.dashboard.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("username/password salah");
+            }
         }
 
         private void btnNewAccount_Click(object sender, EventArgs e)

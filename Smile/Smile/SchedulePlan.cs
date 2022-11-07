@@ -8,18 +8,9 @@ namespace Smile
 {
     public class SchedulePlan
     {
-        public int planID;
-        public int[] planListAct;
-        public DateTime planDate;
-        public string planDesc;
-
-        public void displayRecommend()
-        {
-
-        }
-        public void displayListAct()
-        {
-
-        }
+        public int planID { get; set; }
+        public int[] planListAct { get; set; }
+        public DateTime planDate { get; set; }
+        public string planDesc { get; set; }
     }
 }

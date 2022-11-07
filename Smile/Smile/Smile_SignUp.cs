@@ -29,5 +29,13 @@ namespace Smile
             login.Show();
             this.Dispose();
         }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            if(tbUsernama.Text != null)
+            {
+
+            }
+        }
     }
 }

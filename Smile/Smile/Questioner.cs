@@ -11,12 +11,5 @@ namespace Smile
         public int ID { get; set; }
         public string Question { get; set; }
         public int[] Point { get; set; }
-
-        public int calculatePoint()
-        {
-            int totalPoint = 0;
-            //code here
-            return totalPoint;
-        }
     }
 }

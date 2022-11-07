@@ -58,10 +58,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnNext.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAD0AAAA0CAYAAAA5bTAhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAmVJREFUaEPtmOFt01AYRTNCR2CEjsAIjMAIbED/oTZEsAEjRGqS310A5BEYgRGo
+        DAAACwwBP0AiyAAAAmVJREFUaEPtmOFt01AYRTNCR2CEjsAIjMAIbED/oTZEsAEjRGqS310A5BEYgRGo
         XS5U73vHjq/zbAfZRzpSlVzf9yy9T7G7WVlZSageTrf6czlUn4+/q93pW/Vp/0YfXQ0vezujoh5Jye70
         UR9fBcneWlTUIyvaHX/+eHh8r69nJdsbqKgHFclq7iMPe8pU1IOKEmecd9xPUFEPKsqsj/wc8457CSrq
         QUWtTjzvuIegoh5UdNaJjjyuHVTUg4p6O/LN45pBRT2oyHLEI4/rBRX1oKJB1jf//f7xnWqLgOsEFfWg
@@ -74,10 +74,10 @@
         /Cso9Oj4X/Dnpk/7KX6Croa553ZlZaWFzeYZXktbdNNZrbQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPrev.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAD0AAAA0CAYAAAA5bTAhAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAnNJREFUaEPtmdGN00AURVMCJVACJVACJdABdMD+IUiiLQE6iMQ63xTAx9ABJVDC
+        DAAACwwBP0AiyAAAAnNJREFUaEPtmdGN00AURVMCJVACJVACJdABdMD+IUiiLQE6iMQ63xTAx9ABJVDC
         4jgnUvZxM+trj8fRxkc6UpS9vjMj+Sm2drWwsHCV/Fo/vOXjyyd93r1O2/0ubZpHvnq5pLvdq/awn9K2
         +Xs48OBDny7OSXRW0pcf79rD/imyt1iiJDoLh7lt9/Az7ukkMQ9VFCValeOt3Nyr/ZxL3EMVRYlWI85t
         Ti7xUEVRopPT3cpibnNyqYcqihKdjO4nKDO3OanwUEVRosXpO7c5qfJQRVGiRUmb/Ye+c5uTOg9VFCVa
@@ -91,10 +91,10 @@
         gg==
 </value>
   </data>
-  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPlay.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH4AAAB+CAYAAADiI6WIAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAA35JREFUeF7tnd1x00AURlMCJVBCSqAESqAEOiBvDDae0EFK8ExsPbsAyKgESqAE
+        DAAACwwBP0AiyAAAA35JREFUeF7tnd1x00AURlMCJVBCSqAESqAEOiBvDDae0EFK8ExsPbsAyKgESqAE
         0FraOICiH2u1e3/OmfkeIEwm+GjuF99NpBsAAAAAAAAAgCnUm+q2/rx/2/0RvPC0PdzVu+PPp83jh+6v
         wANn8V+Pv89pLoDv28O77kNgmb/EP18A1QPj3zi94mN21af6fv+m+6dgiUHxIfS/TUbFxzQXAOPfEJPF
         x9D/Npgtvs2v0P/dpwCNXCm+Df2vl0XiLzkx/pWRSHwb+l8PScWHhPG/PX7sPj1IJbn4GPpfNquJj2H8

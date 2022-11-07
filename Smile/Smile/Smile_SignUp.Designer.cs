@@ -72,7 +72,9 @@ namespace Smile
             // tbName
             // 
             this.tbName.Location = new System.Drawing.Point(434, 133);
+            this.tbName.MaxLength = 25;
             this.tbName.Name = "tbName";
+            this.tbName.PlaceholderText = "username";
             this.tbName.Size = new System.Drawing.Size(240, 23);
             this.tbName.TabIndex = 18;
             // 
@@ -80,22 +82,28 @@ namespace Smile
             // 
             this.tbUsernama.Location = new System.Drawing.Point(434, 162);
             this.tbUsernama.Name = "tbUsernama";
+            this.tbUsernama.PlaceholderText = "name";
             this.tbUsernama.Size = new System.Drawing.Size(240, 23);
             this.tbUsernama.TabIndex = 19;
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(434, 245);
+            this.tbPassword.MaxLength = 12;
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PlaceholderText = "password";
             this.tbPassword.Size = new System.Drawing.Size(240, 23);
             this.tbPassword.TabIndex = 20;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // tbConfirm
             // 
             this.tbConfirm.Location = new System.Drawing.Point(434, 274);
             this.tbConfirm.Name = "tbConfirm";
+            this.tbConfirm.PlaceholderText = "confirm password";
             this.tbConfirm.Size = new System.Drawing.Size(240, 23);
             this.tbConfirm.TabIndex = 21;
+            this.tbConfirm.UseSystemPasswordChar = true;
             // 
             // radMale
             // 
@@ -135,6 +143,7 @@ namespace Smile
             this.btnSignup.TabIndex = 25;
             this.btnSignup.Text = "Sign Up";
             this.btnSignup.UseVisualStyleBackColor = true;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
             // 
             // btnNewAccount
             // 

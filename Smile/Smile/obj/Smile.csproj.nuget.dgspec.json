@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\KULIAHProjunPBOSmileSmile\\Smile\\Smile\\Smile.csproj": {}
+    "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\Smile.csproj": {}
   },
   "projects": {
-    "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\KULIAHProjunPBOSmileSmile\\Smile\\Smile\\Smile.csproj": {
+    "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\Smile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\KULIAHProjunPBOSmileSmile\\Smile\\Smile\\Smile.csproj",
+        "projectUniqueName": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\Smile.csproj",
         "projectName": "Smile",
-        "projectPath": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\KULIAHProjunPBOSmileSmile\\Smile\\Smile\\Smile.csproj",
+        "projectPath": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\Smile.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\KULIAHProjunPBOSmileSmile\\Smile\\Smile\\obj\\",
+        "outputPath": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,18 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "WMPLib": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

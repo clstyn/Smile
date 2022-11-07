@@ -57,9 +57,9 @@ namespace Smile
             this.Hide();
         }
 
-        private void e(object sender, EventArgs e)
+        private void emoteHover(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
