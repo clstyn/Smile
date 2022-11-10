@@ -8,17 +8,14 @@ namespace Smile
 {
     public class UserAccount: User
     {
+        private string id;
         private string username;
         private string password;
 
-        public string Username { set => username = value; }
-        public string Password { set => password = value; }
+        public string Username { get => username; set => username = value; }
+        public string Password { get => password; set => password = value; }
+        public string Id { get => id; set => id = value; }
 
-        public UserAccount(string Username, string Password)
-        {
-            this.Username = Username;
-            this.Password = Password;
-        }
-        public UserAccount() { }
+        public static UserAccount logedUser;
     }
 }

@@ -59,6 +59,7 @@ namespace Smile
             catch(Exception e)
             {
                 MessageBox.Show("Error: " + e.Message, "Connection Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Close();
             }
         }
 

@@ -46,6 +46,7 @@ namespace Smile
             this.btnSong4 = new System.Windows.Forms.PictureBox();
             this.btnSmile = new System.Windows.Forms.Label();
             this.gradientPanel1 = new Smile.GradientPanel();
+            this.txtWelcome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnAngry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDissapointed)).BeginInit();
@@ -57,6 +58,7 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.btnSong3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong4)).BeginInit();
+            this.gradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // home_title
@@ -239,10 +241,24 @@ namespace Smile
             this.gradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gradientPanel1.ColorBottom = System.Drawing.Color.Empty;
             this.gradientPanel1.ColorTop = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.gradientPanel1.Controls.Add(this.txtWelcome);
             this.gradientPanel1.Location = new System.Drawing.Point(-2, 0);
             this.gradientPanel1.Name = "gradientPanel1";
             this.gradientPanel1.Size = new System.Drawing.Size(1071, 72);
             this.gradientPanel1.TabIndex = 15;
+            // 
+            // txtWelcome
+            // 
+            this.txtWelcome.AutoSize = true;
+            this.txtWelcome.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtWelcome.ForeColor = System.Drawing.Color.White;
+            this.txtWelcome.Location = new System.Drawing.Point(505, 18);
+            this.txtWelcome.Name = "txtWelcome";
+            this.txtWelcome.Size = new System.Drawing.Size(116, 29);
+            this.txtWelcome.TabIndex = 0;
+            this.txtWelcome.Text = "Welcome";
+            this.txtWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtWelcome.Enter += new System.EventHandler(this.isShow);
             // 
             // panel1
             // 
@@ -294,6 +310,8 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.btnSong3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong4)).EndInit();
+            this.gradientPanel1.ResumeLayout(false);
+            this.gradientPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,6 +336,7 @@ namespace Smile
         private System.Windows.Forms.Label btnSmile;
         private GradientPanel gradientPanel1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label txtWelcome;
     }
 }
 

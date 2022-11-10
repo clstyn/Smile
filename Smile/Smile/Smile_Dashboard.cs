@@ -61,5 +61,13 @@ namespace Smile
         {
             
         }
+
+        private void isShow(object sender, EventArgs e)
+        {
+            if (UserAccount.logedUser != null)
+            {
+                txtWelcome.Text = UserAccount.logedUser.islogin == "true" ? "Welcome, " + UserAccount.logedUser.Name + "!" : "Welcome!";
+            }
+        }
     }
 }

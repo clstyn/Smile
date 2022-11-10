@@ -43,6 +43,7 @@ namespace Smile
             // 
             this.tbUsername.Location = new System.Drawing.Point(435, 205);
             this.tbUsername.Name = "tbUsername";
+            this.tbUsername.PlaceholderText = "username";
             this.tbUsername.Size = new System.Drawing.Size(240, 23);
             this.tbUsername.TabIndex = 0;
             // 
@@ -50,6 +51,7 @@ namespace Smile
             // 
             this.tbPassword.Location = new System.Drawing.Point(435, 234);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PlaceholderText = "password";
             this.tbPassword.Size = new System.Drawing.Size(240, 23);
             this.tbPassword.TabIndex = 1;
             // 

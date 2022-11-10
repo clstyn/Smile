@@ -37,10 +37,12 @@ namespace Smile
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbConfirm = new System.Windows.Forms.TextBox();
             this.radMale = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.radFemale = new System.Windows.Forms.RadioButton();
+            this.dtBirthday = new System.Windows.Forms.DateTimePicker();
             this.btnSignup = new System.Windows.Forms.Button();
             this.btnNewAccount = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnSmile
@@ -63,7 +65,7 @@ namespace Smile
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Futura Md BT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(496, 89);
+            this.label1.Location = new System.Drawing.Point(94, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 29);
             this.label1.TabIndex = 17;
@@ -71,7 +73,7 @@ namespace Smile
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(434, 133);
+            this.tbName.Location = new System.Drawing.Point(32, 81);
             this.tbName.MaxLength = 25;
             this.tbName.Name = "tbName";
             this.tbName.PlaceholderText = "username";
@@ -80,7 +82,7 @@ namespace Smile
             // 
             // tbUsernama
             // 
-            this.tbUsernama.Location = new System.Drawing.Point(434, 162);
+            this.tbUsernama.Location = new System.Drawing.Point(32, 110);
             this.tbUsernama.Name = "tbUsernama";
             this.tbUsernama.PlaceholderText = "name";
             this.tbUsernama.Size = new System.Drawing.Size(240, 23);
@@ -88,7 +90,7 @@ namespace Smile
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(434, 245);
+            this.tbPassword.Location = new System.Drawing.Point(32, 193);
             this.tbPassword.MaxLength = 12;
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.PlaceholderText = "password";
@@ -98,7 +100,7 @@ namespace Smile
             // 
             // tbConfirm
             // 
-            this.tbConfirm.Location = new System.Drawing.Point(434, 274);
+            this.tbConfirm.Location = new System.Drawing.Point(32, 222);
             this.tbConfirm.Name = "tbConfirm";
             this.tbConfirm.PlaceholderText = "confirm password";
             this.tbConfirm.Size = new System.Drawing.Size(240, 23);
@@ -108,7 +110,7 @@ namespace Smile
             // radMale
             // 
             this.radMale.AutoSize = true;
-            this.radMale.Location = new System.Drawing.Point(434, 191);
+            this.radMale.Location = new System.Drawing.Point(32, 139);
             this.radMale.Name = "radMale";
             this.radMale.Size = new System.Drawing.Size(51, 19);
             this.radMale.TabIndex = 22;
@@ -116,28 +118,28 @@ namespace Smile
             this.radMale.Text = "Male";
             this.radMale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radFemale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(505, 191);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(63, 19);
-            this.radioButton1.TabIndex = 23;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Female";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radFemale.AutoSize = true;
+            this.radFemale.Location = new System.Drawing.Point(103, 139);
+            this.radFemale.Name = "radFemale";
+            this.radFemale.Size = new System.Drawing.Size(63, 19);
+            this.radFemale.TabIndex = 23;
+            this.radFemale.TabStop = true;
+            this.radFemale.Text = "Female";
+            this.radFemale.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtBirthday
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(434, 216);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(240, 23);
-            this.dateTimePicker1.TabIndex = 24;
-            this.dateTimePicker1.Value = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
+            this.dtBirthday.Location = new System.Drawing.Point(32, 164);
+            this.dtBirthday.Name = "dtBirthday";
+            this.dtBirthday.Size = new System.Drawing.Size(240, 23);
+            this.dtBirthday.TabIndex = 24;
+            this.dtBirthday.Value = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
             // 
             // btnSignup
             // 
-            this.btnSignup.Location = new System.Drawing.Point(434, 314);
+            this.btnSignup.Location = new System.Drawing.Point(32, 262);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(240, 23);
             this.btnSignup.TabIndex = 25;
@@ -152,12 +154,30 @@ namespace Smile
             this.btnNewAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewAccount.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnNewAccount.ForeColor = System.Drawing.Color.White;
-            this.btnNewAccount.Location = new System.Drawing.Point(474, 340);
+            this.btnNewAccount.Location = new System.Drawing.Point(72, 288);
             this.btnNewAccount.Name = "btnNewAccount";
             this.btnNewAccount.Size = new System.Drawing.Size(159, 16);
             this.btnNewAccount.TabIndex = 26;
             this.btnNewAccount.Text = "Already have an account";
             this.btnNewAccount.Click += new System.EventHandler(this.btnNewAccount_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.btnNewAccount);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnSignup);
+            this.panel1.Controls.Add(this.tbName);
+            this.panel1.Controls.Add(this.dtBirthday);
+            this.panel1.Controls.Add(this.tbUsernama);
+            this.panel1.Controls.Add(this.radFemale);
+            this.panel1.Controls.Add(this.tbPassword);
+            this.panel1.Controls.Add(this.radMale);
+            this.panel1.Controls.Add(this.tbConfirm);
+            this.panel1.Location = new System.Drawing.Point(399, 89);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(300, 360);
+            this.panel1.TabIndex = 27;
             // 
             // Smile_SignUp
             // 
@@ -166,22 +186,16 @@ namespace Smile
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1064, 569);
-            this.Controls.Add(this.btnNewAccount);
-            this.Controls.Add(this.btnSignup);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.radMale);
-            this.Controls.Add(this.tbConfirm);
-            this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.tbUsernama);
-            this.Controls.Add(this.tbName);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSmile);
+            this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Smile_SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Smile_SignUp";
+            this.Load += new System.EventHandler(this.Smile_SignUp_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,9 +210,10 @@ namespace Smile
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbConfirm;
         private System.Windows.Forms.RadioButton radMale;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.RadioButton radFemale;
+        private System.Windows.Forms.DateTimePicker dtBirthday;
         private System.Windows.Forms.Button btnSignup;
         private System.Windows.Forms.Label btnNewAccount;
+        private System.Windows.Forms.Panel panel1;
     }
 }
