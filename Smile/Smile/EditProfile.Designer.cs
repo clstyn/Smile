@@ -168,7 +168,7 @@ namespace Smile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.BackColor = System.Drawing.Color.RosyBrown;
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEdit);

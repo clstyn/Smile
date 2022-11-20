@@ -29,6 +29,7 @@ namespace Smile
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoodStatus));
             this.lblMood = new System.Windows.Forms.Label();
             this.pbEmot = new System.Windows.Forms.PictureBox();
             this.panelMoodPoint = new System.Windows.Forms.Panel();
@@ -58,6 +59,8 @@ namespace Smile
             // 
             // pbEmot
             // 
+            this.pbEmot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbEmot.BackgroundImage")));
+            this.pbEmot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pbEmot.Location = new System.Drawing.Point(57, 157);
             this.pbEmot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbEmot.Name = "pbEmot";

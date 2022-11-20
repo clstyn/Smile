@@ -42,7 +42,7 @@ namespace Smile
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Plum;
+            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblEditProfile);
             this.panel1.Controls.Add(this.lblMoodStatus);
@@ -54,6 +54,8 @@ namespace Smile
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(84, 82);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 300);
@@ -84,9 +86,8 @@ namespace Smile
             // 
             // editProfile1
             // 
-            this.editProfile1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.editProfile1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("editProfile1.BackgroundImage")));
-            this.editProfile1.Location = new System.Drawing.Point(473, 3);
+            this.editProfile1.BackColor = System.Drawing.Color.RosyBrown;
+            this.editProfile1.Location = new System.Drawing.Point(473, -7);
             this.editProfile1.Name = "editProfile1";
             this.editProfile1.Size = new System.Drawing.Size(1041, 945);
             this.editProfile1.TabIndex = 1;
@@ -95,7 +96,7 @@ namespace Smile
             // 
             this.moodStatus1.BackColor = System.Drawing.Color.Transparent;
             this.moodStatus1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("moodStatus1.BackgroundImage")));
-            this.moodStatus1.Location = new System.Drawing.Point(473, 0);
+            this.moodStatus1.Location = new System.Drawing.Point(475, 1);
             this.moodStatus1.Name = "moodStatus1";
             this.moodStatus1.Size = new System.Drawing.Size(1041, 945);
             this.moodStatus1.TabIndex = 2;
@@ -112,6 +113,7 @@ namespace Smile
             this.MinimizeBox = false;
             this.Name = "Smile_Profile";
             this.Text = "Smile_Profile";
+            this.Load += new System.EventHandler(this.Smile_Profile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
