@@ -34,8 +34,11 @@ namespace Smile
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Smile_Login login = new Smile_Login();
-            login.Show();
+            //Smile_Login login = new Smile_Login();
+            //login.Show();
+            Smile_Profile profil = new Smile_Profile();
+            profil.Show();
+            //Smile_Profile.dasbor_profil.Show();
             this.Hide();
         }
 

@@ -29,6 +29,7 @@ namespace Smile
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Smile_Profile));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblEditProfile = new System.Windows.Forms.Label();
@@ -41,22 +42,21 @@ namespace Smile
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Plum;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblEditProfile);
             this.panel1.Controls.Add(this.lblMoodStatus);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 569);
+            this.panel1.Size = new System.Drawing.Size(467, 948);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(59, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(84, 82);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 180);
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -64,10 +64,9 @@ namespace Smile
             // 
             this.lblEditProfile.AutoSize = true;
             this.lblEditProfile.Font = new System.Drawing.Font("Futura Md BT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEditProfile.Location = new System.Drawing.Point(85, 343);
-            this.lblEditProfile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEditProfile.Location = new System.Drawing.Point(121, 572);
             this.lblEditProfile.Name = "lblEditProfile";
-            this.lblEditProfile.Size = new System.Drawing.Size(144, 29);
+            this.lblEditProfile.Size = new System.Drawing.Size(216, 44);
             this.lblEditProfile.TabIndex = 1;
             this.lblEditProfile.Text = "Edit Profile";
             this.lblEditProfile.Click += new System.EventHandler(this.lblEditProfile_Click);
@@ -76,10 +75,9 @@ namespace Smile
             // 
             this.lblMoodStatus.AutoSize = true;
             this.lblMoodStatus.Font = new System.Drawing.Font("Futura Md BT", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMoodStatus.Location = new System.Drawing.Point(78, 276);
-            this.lblMoodStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMoodStatus.Location = new System.Drawing.Point(111, 460);
             this.lblMoodStatus.Name = "lblMoodStatus";
-            this.lblMoodStatus.Size = new System.Drawing.Size(162, 29);
+            this.lblMoodStatus.Size = new System.Drawing.Size(242, 44);
             this.lblMoodStatus.TabIndex = 0;
             this.lblMoodStatus.Text = "Mood Status";
             this.lblMoodStatus.Click += new System.EventHandler(this.lblMoodStatus_Click);
@@ -87,30 +85,29 @@ namespace Smile
             // editProfile1
             // 
             this.editProfile1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.editProfile1.Location = new System.Drawing.Point(331, 2);
-            this.editProfile1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.editProfile1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("editProfile1.BackgroundImage")));
+            this.editProfile1.Location = new System.Drawing.Point(473, 3);
             this.editProfile1.Name = "editProfile1";
-            this.editProfile1.Size = new System.Drawing.Size(729, 567);
+            this.editProfile1.Size = new System.Drawing.Size(1041, 945);
             this.editProfile1.TabIndex = 1;
             // 
             // moodStatus1
             // 
-            this.moodStatus1.BackColor = System.Drawing.Color.Plum;
-            this.moodStatus1.Location = new System.Drawing.Point(331, 2);
-            this.moodStatus1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.moodStatus1.BackColor = System.Drawing.Color.Transparent;
+            this.moodStatus1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("moodStatus1.BackgroundImage")));
+            this.moodStatus1.Location = new System.Drawing.Point(473, 0);
             this.moodStatus1.Name = "moodStatus1";
-            this.moodStatus1.Size = new System.Drawing.Size(729, 567);
+            this.moodStatus1.Size = new System.Drawing.Size(1041, 945);
             this.moodStatus1.TabIndex = 2;
             // 
             // Smile_Profile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 569);
+            this.ClientSize = new System.Drawing.Size(1520, 948);
             this.Controls.Add(this.moodStatus1);
             this.Controls.Add(this.editProfile1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Smile_Profile";

@@ -17,6 +17,8 @@ namespace Smile
         {
             InitializeComponent();
             dasbor_profil = this;
+            lblMoodStatus.ForeColor = Color.Black;
+            lblEditProfile.ForeColor = Color.Cornsilk;
         }
 
         private void lblMoodStatus_Click(object sender, EventArgs e)
@@ -24,6 +26,8 @@ namespace Smile
             moodStatus1.Show();
             editProfile1.Hide();
             moodStatus1.BringToFront();
+            lblMoodStatus.ForeColor = Color.Black;
+            lblEditProfile.ForeColor = Color.Cornsilk;
         }
 
         private void lblEditProfile_Click(object sender, EventArgs e)
@@ -31,6 +35,8 @@ namespace Smile
             editProfile1.Show();
             moodStatus1.Hide();
             editProfile1.BringToFront();
+            lblEditProfile.ForeColor = Color.Black;
+            lblMoodStatus.ForeColor = Color.Cornsilk;
         }
     }
 }
