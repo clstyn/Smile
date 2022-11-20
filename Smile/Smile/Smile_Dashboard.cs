@@ -34,9 +34,20 @@ namespace Smile
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Smile_Login login = new Smile_Login();
-            login.Show();
             this.Hide();
+            //Smile_Login login = new Smile_Login();
+            //login.Show();
+
+            // INI SEMENTARA 
+            Smile_Profile profil = new Smile_Profile();
+            profil.ShowDialog();
+            profil = null;
+            // to do:
+            // Uncomment yang atas yang Smile_Login
+            // Harusnya ini kalo di klik mengarah ke page login
+            // Nanti Smile_Profile dibuka lewat login
+            // Karena backend nya masih belum bisa, jadi sementara begini
+            this.Show();
         }
 
         private void btnSmile_Click(object sender, EventArgs e)
