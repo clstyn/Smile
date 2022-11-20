@@ -8,8 +8,14 @@ namespace Smile
 {
     public class Questioner
     {
-        public int ID { get; set; }
-        public string Question { get; set; }
-        public int[] Point { get; set; }
+        private int id;
+        private string question;
+        private string category;
+        private int[] point;
+
+        public int ID { get => id; set => id = value; }
+        public string Question { get => question; set => question = value; }
+        public string Category { get => category; set => category = value; }
+        public int[] Point { get => point; set => point = value; }
     }
 }
