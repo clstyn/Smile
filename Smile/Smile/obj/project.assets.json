@@ -116,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\Smile.csproj",
+      "projectUniqueName": "E:\\KULIAH\\ProjunPBO\\Project\\Smile\\Smile\\Smile.csproj",
       "projectName": "Smile",
-      "projectPath": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\Smile.csproj",
+      "projectPath": "E:\\KULIAH\\ProjunPBO\\Project\\Smile\\Smile\\Smile.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\KULIAH\\ProjunPBO\\Smile\\Smile\\Smile\\Smile\\obj\\",
+      "outputPath": "E:\\KULIAH\\ProjunPBO\\Project\\Smile\\Smile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

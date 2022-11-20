@@ -50,7 +50,7 @@ namespace Smile
                         getUserData(acc);
 
                         this.Hide();
-                        Smile_Dashboard.dashboard.Show();
+                        Smile_Profile.dasbor_profil.Show();
                     }
                     else if((int)cmd.ExecuteScalar()==0)
                     {
