@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Smile.QuestionPage
 {
@@ -15,6 +16,11 @@ namespace Smile.QuestionPage
         public pageQuest()
         {
             InitializeComponent();
+        }
+
+        private void pageQuest_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
