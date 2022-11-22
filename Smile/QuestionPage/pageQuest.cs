@@ -17,10 +17,5 @@ namespace Smile.QuestionPage
         {
             InitializeComponent();
         }
-
-        private void pageQuest_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
