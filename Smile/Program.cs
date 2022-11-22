@@ -16,7 +16,7 @@ namespace Smile
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Smile_Homepage());
+            Application.Run(new Smile_Postgree());
         }
     }
 }
