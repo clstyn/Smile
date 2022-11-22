@@ -46,8 +46,9 @@ namespace Smile
 
         private void btnEmote_Click(object sender, EventArgs e)
         {
-            /*startQuest start = new startQuest();
-            start.Show();*/
+            Smile_Questionnaire questions = new Smile_Questionnaire();
+            questions.Show();
+            this.Hide();
         }
 
         private void btnSong_Click(object sender, EventArgs e)

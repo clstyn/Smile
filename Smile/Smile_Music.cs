@@ -34,6 +34,7 @@ namespace Smile
         {
             loadMusicList();
         }
+
         private void loadMusicList()
         {
             try
