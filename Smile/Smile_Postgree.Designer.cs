@@ -38,6 +38,10 @@ namespace Smile
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Label();
+            this.tbDatabase = new System.Windows.Forms.TextBox();
+            this.lbUname = new System.Windows.Forms.Label();
+            this.lbPass = new System.Windows.Forms.Label();
+            this.lbDB = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +58,10 @@ namespace Smile
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.panel2.Controls.Add(this.lbDB);
+            this.panel2.Controls.Add(this.lbPass);
+            this.panel2.Controls.Add(this.lbUname);
+            this.panel2.Controls.Add(this.tbDatabase);
             this.panel2.Controls.Add(this.btnBack);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnSignIn);
@@ -94,7 +102,7 @@ namespace Smile
             // 
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Location = new System.Drawing.Point(23, 154);
+            this.btnSignIn.Location = new System.Drawing.Point(23, 184);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(206, 25);
             this.btnSignIn.TabIndex = 20;
@@ -109,6 +117,7 @@ namespace Smile
             this.tbPassword.Size = new System.Drawing.Size(206, 20);
             this.tbPassword.TabIndex = 19;
             this.tbPassword.UseSystemPasswordChar = true;
+            this.tbPassword.TextChanged += new System.EventHandler(this.fillPass);
             // 
             // tbUsername
             // 
@@ -116,6 +125,7 @@ namespace Smile
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(206, 20);
             this.tbUsername.TabIndex = 18;
+            this.tbUsername.TextChanged += new System.EventHandler(this.fillUname);
             // 
             // btnExit
             // 
@@ -128,6 +138,54 @@ namespace Smile
             this.btnExit.Size = new System.Drawing.Size(15, 15);
             this.btnExit.TabIndex = 22;
             this.btnExit.Text = "X";
+            // 
+            // tbDatabase
+            // 
+            this.tbDatabase.Location = new System.Drawing.Point(23, 158);
+            this.tbDatabase.Name = "tbDatabase";
+            this.tbDatabase.Size = new System.Drawing.Size(206, 20);
+            this.tbDatabase.TabIndex = 24;
+            this.tbDatabase.UseSystemPasswordChar = true;
+            this.tbDatabase.TextChanged += new System.EventHandler(this.fillDB);
+            // 
+            // lbUname
+            // 
+            this.lbUname.AutoSize = true;
+            this.lbUname.BackColor = System.Drawing.Color.White;
+            this.lbUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUname.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbUname.Location = new System.Drawing.Point(91, 96);
+            this.lbUname.Name = "lbUname";
+            this.lbUname.Size = new System.Drawing.Size(64, 13);
+            this.lbUname.TabIndex = 25;
+            this.lbUname.Text = "Username...";
+            this.lbUname.Click += new System.EventHandler(this.lbUname_Click);
+            // 
+            // lbPass
+            // 
+            this.lbPass.AutoSize = true;
+            this.lbPass.BackColor = System.Drawing.Color.White;
+            this.lbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPass.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbPass.Location = new System.Drawing.Point(92, 121);
+            this.lbPass.Name = "lbPass";
+            this.lbPass.Size = new System.Drawing.Size(62, 13);
+            this.lbPass.TabIndex = 26;
+            this.lbPass.Text = "Password...";
+            this.lbPass.Click += new System.EventHandler(this.lbPass_Click);
+            // 
+            // lbDB
+            // 
+            this.lbDB.AutoSize = true;
+            this.lbDB.BackColor = System.Drawing.Color.White;
+            this.lbDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDB.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbDB.Location = new System.Drawing.Point(93, 161);
+            this.lbDB.Name = "lbDB";
+            this.lbDB.Size = new System.Drawing.Size(60, 13);
+            this.lbDB.TabIndex = 27;
+            this.lbDB.Text = "DB name...";
+            this.lbDB.Click += new System.EventHandler(this.lbDB_Click);
             // 
             // Smile_Postgree
             // 
@@ -159,5 +217,9 @@ namespace Smile
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label btnExit;
+        private System.Windows.Forms.TextBox tbDatabase;
+        private System.Windows.Forms.Label lbUname;
+        private System.Windows.Forms.Label lbDB;
+        private System.Windows.Forms.Label lbPass;
     }
 }
