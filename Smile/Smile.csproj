@@ -164,6 +164,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuestionPage\pageQuest.resx">
+      <DependentUpon>pageQuest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Smile_Homepage.resx">
       <DependentUpon>Smile_Homepage.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Smile_Postgree.resx">
       <DependentUpon>Smile_Postgree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smile_Questionnaire.resx">
+      <DependentUpon>Smile_Questionnaire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Smile_SignUp.resx">
       <DependentUpon>Smile_SignUp.cs</DependentUpon>
