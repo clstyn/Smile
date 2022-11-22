@@ -103,10 +103,9 @@ namespace Smile
             this.lbSearch.BackColor = System.Drawing.Color.White;
             this.lbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSearch.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbSearch.Location = new System.Drawing.Point(7, 64);
-            this.lbSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSearch.Location = new System.Drawing.Point(5, 52);
             this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(72, 20);
+            this.lbSearch.Size = new System.Drawing.Size(50, 13);
             this.lbSearch.TabIndex = 20;
             this.lbSearch.Text = "Search...";
             this.lbSearch.Click += new System.EventHandler(this.lbSearch_Click);
@@ -116,13 +115,12 @@ namespace Smile
             this.lbBrowse.AutoSize = true;
             this.lbBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
             this.lbBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBrowse.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBrowse.ForeColor = System.Drawing.Color.White;
-            this.lbBrowse.Location = new System.Drawing.Point(285, 11);
-            this.lbBrowse.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBrowse.MinimumSize = new System.Drawing.Size(0, 25);
+            this.lbBrowse.Location = new System.Drawing.Point(214, 9);
+            this.lbBrowse.MinimumSize = new System.Drawing.Size(0, 20);
             this.lbBrowse.Name = "lbBrowse";
-            this.lbBrowse.Size = new System.Drawing.Size(84, 25);
+            this.lbBrowse.Size = new System.Drawing.Size(63, 20);
             this.lbBrowse.TabIndex = 19;
             this.lbBrowse.Text = "browse...";
             this.lbBrowse.Click += new System.EventHandler(this.lbBrowse_Click);
@@ -192,10 +190,9 @@ namespace Smile
             // 
             this.btnStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
             this.btnStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnStop.Location = new System.Drawing.Point(775, 47);
-            this.btnStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStop.Location = new System.Drawing.Point(581, 38);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(33, 31);
+            this.btnStop.Size = new System.Drawing.Size(25, 25);
             this.btnStop.TabIndex = 5;
             this.btnStop.TabStop = false;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
@@ -233,9 +230,9 @@ namespace Smile
             // btnPlay
             // 
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
-            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPlay.Location = new System.Drawing.Point(585, 20);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.BackgroundImage")));
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlay.Location = new System.Drawing.Point(439, 16);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(92, 85);
             this.btnPlay.TabIndex = 0;

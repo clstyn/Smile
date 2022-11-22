@@ -27,7 +27,6 @@ namespace Smile
             btnLogin.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnHappy.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnSad.BackColor = Color.FromArgb(192, 76, 58, 89);
-            btnDissapointed.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnCry.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnAngry.BackColor = Color.FromArgb(192, 76, 58, 89);
         }
