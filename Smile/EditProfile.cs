@@ -18,6 +18,18 @@ namespace Smile
         public static NpgsqlCommand cmd;
         private string sql;
 
+        private void fillUname(object sender, EventArgs e)
+        {
+            if (tbUsername.Text.Length >= 1)
+            {
+                lbConfirm.Visible = false;
+            }
+            else
+            {
+                lbConfirm.Visible = true;
+            }
+        }
+
         public EditProfile()
         {
             InitializeComponent();
@@ -41,7 +53,7 @@ namespace Smile
                     }
                     conn.Close();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
                 }
@@ -57,7 +69,7 @@ namespace Smile
             if (acc.Gender == "Male")
             {
                 radMale.Checked = true;
-            } 
+            }
             else
             {
                 radFemale.Checked = true;
@@ -96,7 +108,7 @@ namespace Smile
                 cmd.Parameters.AddWithValue("_birthday", acc.Birthday.ToShortDateString());
                 if ((bool)cmd.ExecuteScalar() == true)
                 {
-                  
+
                     MessageBox.Show("Profile Edited!");
 
                 }

@@ -39,6 +39,7 @@ namespace Smile
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.radMale = new System.Windows.Forms.RadioButton();
             this.tbConfirm = new System.Windows.Forms.TextBox();
+            this.lbConfirm = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRemove
@@ -46,9 +47,9 @@ namespace Smile
             this.btnRemove.AutoSize = true;
             this.btnRemove.BackColor = System.Drawing.Color.Transparent;
             this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(299, 840);
+            this.btnRemove.Location = new System.Drawing.Point(269, 672);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(439, 33);
@@ -60,9 +61,9 @@ namespace Smile
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Futura Md BT", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Futura Md BT", 24F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(469, 100);
+            this.label1.Location = new System.Drawing.Point(422, 80);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 57);
@@ -71,11 +72,11 @@ namespace Smile
             // 
             // btnEdit
             // 
-            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEdit.Location = new System.Drawing.Point(341, 740);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.btnEdit.Location = new System.Drawing.Point(307, 592);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(343, 80);
+            this.btnEdit.Size = new System.Drawing.Size(309, 64);
             this.btnEdit.TabIndex = 35;
             this.btnEdit.Text = "Edit Profile";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -83,43 +84,41 @@ namespace Smile
             // 
             // tbUsername
             // 
-            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbUsername.Location = new System.Drawing.Point(341, 215);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbUsername.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.tbUsername.Location = new System.Drawing.Point(307, 172);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbUsername.MaxLength = 25;
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.PlaceholderText = "username";
-            this.tbUsername.Size = new System.Drawing.Size(341, 45);
+            this.tbUsername.Size = new System.Drawing.Size(307, 45);
             this.tbUsername.TabIndex = 28;
             // 
             // dtBirthday
             // 
-            this.dtBirthday.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtBirthday.Location = new System.Drawing.Point(341, 453);
-            this.dtBirthday.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dtBirthday.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.dtBirthday.Location = new System.Drawing.Point(307, 362);
+            this.dtBirthday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtBirthday.Name = "dtBirthday";
-            this.dtBirthday.Size = new System.Drawing.Size(341, 45);
+            this.dtBirthday.Size = new System.Drawing.Size(307, 45);
             this.dtBirthday.TabIndex = 34;
             this.dtBirthday.Value = new System.DateTime(2001, 1, 1, 0, 0, 0, 0);
             // 
             // tbName
             // 
-            this.tbName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbName.Location = new System.Drawing.Point(341, 308);
-            this.tbName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbName.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.tbName.Location = new System.Drawing.Point(307, 246);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbName.Name = "tbName";
-            this.tbName.PlaceholderText = "name";
-            this.tbName.Size = new System.Drawing.Size(341, 45);
+            this.tbName.Size = new System.Drawing.Size(307, 45);
             this.tbName.TabIndex = 29;
             // 
             // radFemale
             // 
             this.radFemale.AutoSize = true;
             this.radFemale.BackColor = System.Drawing.Color.Transparent;
-            this.radFemale.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radFemale.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.radFemale.ForeColor = System.Drawing.Color.Cornsilk;
-            this.radFemale.Location = new System.Drawing.Point(551, 377);
-            this.radFemale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radFemale.Location = new System.Drawing.Point(496, 302);
+            this.radFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radFemale.Name = "radFemale";
             this.radFemale.Size = new System.Drawing.Size(133, 44);
             this.radFemale.TabIndex = 33;
@@ -129,13 +128,12 @@ namespace Smile
             // 
             // tbPassword
             // 
-            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbPassword.Location = new System.Drawing.Point(341, 550);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.tbPassword.Location = new System.Drawing.Point(307, 440);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPassword.MaxLength = 12;
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PlaceholderText = "password";
-            this.tbPassword.Size = new System.Drawing.Size(341, 45);
+            this.tbPassword.Size = new System.Drawing.Size(307, 45);
             this.tbPassword.TabIndex = 30;
             this.tbPassword.UseSystemPasswordChar = true;
             // 
@@ -143,10 +141,10 @@ namespace Smile
             // 
             this.radMale.AutoSize = true;
             this.radMale.BackColor = System.Drawing.Color.Transparent;
-            this.radMale.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radMale.Font = new System.Drawing.Font("Segoe UI", 14.25F);
             this.radMale.ForeColor = System.Drawing.Color.Cornsilk;
-            this.radMale.Location = new System.Drawing.Point(341, 377);
-            this.radMale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radMale.Location = new System.Drawing.Point(307, 302);
+            this.radMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radMale.Name = "radMale";
             this.radMale.Size = new System.Drawing.Size(105, 44);
             this.radMale.TabIndex = 32;
@@ -156,20 +154,33 @@ namespace Smile
             // 
             // tbConfirm
             // 
-            this.tbConfirm.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbConfirm.Location = new System.Drawing.Point(341, 640);
-            this.tbConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tbConfirm.Font = new System.Drawing.Font("Segoe UI", 14.25F);
+            this.tbConfirm.Location = new System.Drawing.Point(307, 512);
+            this.tbConfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbConfirm.Name = "tbConfirm";
-            this.tbConfirm.PlaceholderText = "confirm password";
-            this.tbConfirm.Size = new System.Drawing.Size(341, 45);
+            this.tbConfirm.Size = new System.Drawing.Size(307, 45);
             this.tbConfirm.TabIndex = 31;
             this.tbConfirm.UseSystemPasswordChar = true;
+            this.tbConfirm.TextChanged += new System.EventHandler(this.fillUname);
+            // 
+            // lbConfirm
+            // 
+            this.lbConfirm.AutoSize = true;
+            this.lbConfirm.BackColor = System.Drawing.Color.White;
+            this.lbConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConfirm.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbConfirm.Location = new System.Drawing.Point(357, 519);
+            this.lbConfirm.Name = "lbConfirm";
+            this.lbConfirm.Size = new System.Drawing.Size(203, 29);
+            this.lbConfirm.TabIndex = 37;
+            this.lbConfirm.Text = "confirm password";
             // 
             // EditProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
+            this.Controls.Add(this.lbConfirm);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEdit);
@@ -180,8 +191,9 @@ namespace Smile
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.radMale);
             this.Controls.Add(this.tbConfirm);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EditProfile";
-            this.Size = new System.Drawing.Size(1074, 1003);
+            this.Size = new System.Drawing.Size(967, 802);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +211,6 @@ namespace Smile
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.RadioButton radMale;
         private System.Windows.Forms.TextBox tbConfirm;
+        private System.Windows.Forms.Label lbConfirm;
     }
 }
