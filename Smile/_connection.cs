@@ -17,7 +17,7 @@ namespace Smile
 
         public void getConn(string username, string pass)
         {
-            constring = "Host=localhost;Port=5432;Username="+username+";Password="+pass+";Database=dbsmile";
+            constring = "Host=localhost;Port=5432;Username="+username+";Password="+pass+";Database=Michael";
             conn = new NpgsqlConnection(constring);
         }
     }
