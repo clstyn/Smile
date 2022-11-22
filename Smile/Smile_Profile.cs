@@ -13,11 +13,6 @@ namespace Smile
 {
     public partial class Smile_Profile : Form
     {
-        private NpgsqlConnection conn;
-        public static NpgsqlCommand cmd;
-        private string sql;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=smile";
-
         public static Form dashboard;
         public Smile_Profile()
         {
@@ -53,7 +48,10 @@ namespace Smile
 
         private void Smile_Profile_Load(object sender, EventArgs e)
         {
-
+            if (UserAccount.logedUser != null)
+            {
+                lblName.Text = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Name + "!" : "Name";
+            }
         }
     }
 }

@@ -13,8 +13,6 @@ namespace Smile
 {
     public partial class EditProfile : UserControl
     {
-        private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=postgres;Database=smile";
         public static NpgsqlCommand cmd;
         private string sql;
 
@@ -33,7 +31,6 @@ namespace Smile
         public EditProfile()
         {
             InitializeComponent();
-            conn = new NpgsqlConnection(connstring);
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -43,19 +40,20 @@ namespace Smile
             {
                 try
                 {
-                    conn.Open();
+                    _connection.Conn.Open();
                     sql = @"select deleteuser(:id)";
-                    cmd = new NpgsqlCommand(sql, conn);
+                    cmd = new NpgsqlCommand(sql, _connection.Conn);
                     cmd.Parameters.AddWithValue("id", UserAccount.logedUser.Id.ToString());
                     if ((bool)cmd.ExecuteScalar() == true)
                     {
                         MessageBox.Show("Account Deleted!");
                     }
-                    conn.Close();
+                    _connection.Conn.Close();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
+                    _connection.Conn.Close();
                 }
             }
         }
@@ -97,9 +95,9 @@ namespace Smile
         {
             try
             {
-                conn.Open();
+                _connection.Conn.Open();
                 sql = @"select updateuser(:_id, :_username, :_pass, :_nama, :_gender, :_birthday)";
-                cmd = new NpgsqlCommand(sql, conn);
+                cmd = new NpgsqlCommand(sql, _connection.Conn);
                 cmd.Parameters.AddWithValue("_id", UserAccount.logedUser.Id);
                 cmd.Parameters.AddWithValue("_username", acc.Username);
                 cmd.Parameters.AddWithValue("_pass", acc.Password);
@@ -116,7 +114,7 @@ namespace Smile
             catch (Exception e)
             {
                 MessageBox.Show("Error: " + e.Message);
-                conn.Close();
+                _connection.Conn.Close();
             }
         }
     }
