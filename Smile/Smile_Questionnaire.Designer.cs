@@ -38,6 +38,7 @@ namespace Smile
             this.pageQuest2 = new Smile.QuestionPage.pageQuest();
             this.pageQuest3 = new Smile.QuestionPage.pageQuest();
             this.pageQuest4 = new Smile.QuestionPage.pageQuest();
+            this.btnFinish = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSmile
@@ -60,7 +61,7 @@ namespace Smile
             this.btnNext.BackColor = System.Drawing.Color.Transparent;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(742, 534);
+            this.btnNext.Location = new System.Drawing.Point(742, 569);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(47, 20);
             this.btnNext.TabIndex = 17;
@@ -73,7 +74,7 @@ namespace Smile
             this.btnPrev.BackColor = System.Drawing.Color.Transparent;
             this.btnPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.btnPrev.ForeColor = System.Drawing.Color.White;
-            this.btnPrev.Location = new System.Drawing.Point(433, 534);
+            this.btnPrev.Location = new System.Drawing.Point(433, 569);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(47, 20);
             this.btnPrev.TabIndex = 18;
@@ -86,7 +87,7 @@ namespace Smile
             this.txtPage.BackColor = System.Drawing.Color.Transparent;
             this.txtPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtPage.ForeColor = System.Drawing.Color.White;
-            this.txtPage.Location = new System.Drawing.Point(585, 534);
+            this.txtPage.Location = new System.Drawing.Point(585, 569);
             this.txtPage.Name = "txtPage";
             this.txtPage.Size = new System.Drawing.Size(49, 29);
             this.txtPage.TabIndex = 19;
@@ -95,15 +96,15 @@ namespace Smile
             // pageQuest1
             // 
             this.pageQuest1.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest1.Location = new System.Drawing.Point(324, 10);
+            this.pageQuest1.Location = new System.Drawing.Point(309, -10);
             this.pageQuest1.Name = "pageQuest1";
-            this.pageQuest1.Size = new System.Drawing.Size(622, 576);
+            this.pageQuest1.Size = new System.Drawing.Size(617, 576);
             this.pageQuest1.TabIndex = 20;
             // 
             // pageQuest2
             // 
             this.pageQuest2.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest2.Location = new System.Drawing.Point(324, 10);
+            this.pageQuest2.Location = new System.Drawing.Point(309, -10);
             this.pageQuest2.Name = "pageQuest2";
             this.pageQuest2.Size = new System.Drawing.Size(617, 576);
             this.pageQuest2.TabIndex = 21;
@@ -111,7 +112,7 @@ namespace Smile
             // pageQuest3
             // 
             this.pageQuest3.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest3.Location = new System.Drawing.Point(324, 10);
+            this.pageQuest3.Location = new System.Drawing.Point(309, -10);
             this.pageQuest3.Name = "pageQuest3";
             this.pageQuest3.Size = new System.Drawing.Size(617, 576);
             this.pageQuest3.TabIndex = 22;
@@ -119,10 +120,23 @@ namespace Smile
             // pageQuest4
             // 
             this.pageQuest4.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest4.Location = new System.Drawing.Point(329, 12);
+            this.pageQuest4.Location = new System.Drawing.Point(309, -10);
             this.pageQuest4.Name = "pageQuest4";
             this.pageQuest4.Size = new System.Drawing.Size(617, 576);
             this.pageQuest4.TabIndex = 23;
+            // 
+            // btnFinish
+            // 
+            this.btnFinish.AutoSize = true;
+            this.btnFinish.BackColor = System.Drawing.Color.Transparent;
+            this.btnFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
+            this.btnFinish.ForeColor = System.Drawing.Color.White;
+            this.btnFinish.Location = new System.Drawing.Point(1088, 569);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(60, 20);
+            this.btnFinish.TabIndex = 24;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // Smile_Questionnaire
             // 
@@ -131,6 +145,7 @@ namespace Smile
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1216, 607);
+            this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.txtPage);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.btnNext);
@@ -146,6 +161,7 @@ namespace Smile
             this.Name = "Smile_Questionnaire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Smile_Questioner";
+            this.Load += new System.EventHandler(this.Smile_Questionnaire_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +178,6 @@ namespace Smile
         private QuestionPage.pageQuest pageQuest2;
         private QuestionPage.pageQuest pageQuest3;
         private QuestionPage.pageQuest pageQuest4;
+        private System.Windows.Forms.Label btnFinish;
     }
 }

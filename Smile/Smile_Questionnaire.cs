@@ -16,16 +16,12 @@ namespace Smile
         public Smile_Questionnaire()
         {
             InitializeComponent();
+            btnPrev.Visible = false;
         }
 
         private int pagenumber=1;
         private DataTable Questions;
-
-        private void btnSmile_Click(object sender, EventArgs e)
-        {
-            Smile_Homepage.dashboard.Show();
-            this.Dispose();
-        }
+        public List<string> Questionlist;
 
         private void Smile_Questionnaire_Load(object sender, EventArgs e)
         {
@@ -35,10 +31,16 @@ namespace Smile
             pageQuest3.Visible = false;
             pageQuest4.Visible = false;
 
-            loadQuestionnaire();
+            loadQuestioner();
         }
 
-        private void loadQuestionnaire()
+        private void btnSmile_Click(object sender, EventArgs e)
+        {
+            Smile_Homepage.dashboard.Show();
+            this.Dispose();
+        }
+
+        private void loadQuestioner()
         {
             Questioner Quest = new Questioner();
             Quest.loadQuestionnaire();
@@ -60,16 +62,19 @@ namespace Smile
                 {
                     Questions.Rows.Add(row.ItemArray);
                 }
+
+                string name = row["question"].ToString();
+                Console.WriteLine(name);
             }
 
-            List<string> Questionlist = new List<string>();
+            Questionlist = new List<string>();
             foreach (DataRow row in Questions.Rows)
             {
-               string temp = row["question"].ToString();
-               Questionlist.Add(temp);
+                string temp = row["question"].ToString();
+                Questionlist.Add(temp);
             }
 
-            pageQuest1.txtQ1.Text = Questionlist[0];
+            pageQuest1.txtQ1.Text = Questionlist[1];
             pageQuest1.txtQ2.Text = Questionlist[1];
             pageQuest1.txtQ3.Text = Questionlist[2];
             pageQuest1.txtQ4.Text = Questionlist[3];
@@ -92,26 +97,65 @@ namespace Smile
             pageQuest4.txtQ3.Text = Questionlist[17];
             pageQuest4.txtQ4.Text = Questionlist[18];
             pageQuest4.txtQ5.Text = Questionlist[19];
-
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if(pagenumber<4)
+            if(pagenumber==1)
             {
-                pagenumber -= 1;
+                pagenumber += 1;
                 txtPage.Text = pagenumber.ToString() + "/4";
-
+                pageQuest1.Visible = false;
+                pageQuest2.Visible = true;
+                btnPrev.Visible = true;
+            }
+            else if(pagenumber == 2)
+            {
+                pagenumber += 1;
+                txtPage.Text = pagenumber.ToString() + "/4";
+                pageQuest2.Visible = false;
+                pageQuest3.Visible = true;
+            }
+            else if (pagenumber == 3)
+            {
+                pagenumber += 1;
+                txtPage.Text = pagenumber.ToString() + "/4";
+                pageQuest3.Visible = false;
+                pageQuest4.Visible = true;
+                btnNext.Visible = false;
             }
         }
 
         private void btnPrev_Click(object sender, EventArgs e)
         {
-            if (pagenumber > 1)
+            if (pagenumber == 2)
             {
                 pagenumber -= 1;
                 txtPage.Text = pagenumber.ToString() + "/4";
+                pageQuest1.Visible = true;
+                pageQuest2.Visible = false;
+                btnPrev.Visible = false;
             }
+            else if (pagenumber == 3)
+            {
+                pagenumber -= 1;
+                txtPage.Text = pagenumber.ToString() + "/4";
+                pageQuest2.Visible = true;
+                pageQuest3.Visible = false;
+            }
+            else if (pagenumber == 4)
+            {
+                pagenumber -= 1;
+                txtPage.Text = pagenumber.ToString() + "/4";
+                pageQuest3.Visible = true;
+                pageQuest4.Visible = false;
+                btnNext.Visible = true;
+            }
+        }
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

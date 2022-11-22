@@ -36,9 +36,14 @@ namespace Smile
                 sql = "select * from questionnaire_select()";
                 cmd = new NpgsqlCommand(sql, _connection.Conn);
                 dt = new DataTable();
-                //data loaded
                 NpgsqlDataReader rd = cmd.ExecuteReader();
                 dt.Load(rd);
+                //data loaded
+                /*foreach (DataRow row in dt.Rows)
+                {
+                    string name = row["Question"].ToString();
+                    Console.WriteLine(name);
+                }*/
                 _connection.Conn.Close();
             }
             catch (Exception err)
