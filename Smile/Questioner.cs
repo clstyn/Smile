@@ -38,12 +38,6 @@ namespace Smile
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
                 dt.Load(rd);
-                //data loaded
-                /*foreach (DataRow row in dt.Rows)
-                {
-                    string name = row["Question"].ToString();
-                    Console.WriteLine(name);
-                }*/
                 _connection.Conn.Close();
             }
             catch (Exception err)
