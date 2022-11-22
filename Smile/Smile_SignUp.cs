@@ -125,6 +125,7 @@ namespace Smile
                 if ((int)cmd.ExecuteScalar() == 1)
                 {
                     MessageBox.Show("Sign Up success!");
+                    _connection.Conn.Close();
                     this.Hide();
                     Smile_Login login = new Smile_Login();
                     login.Show();
