@@ -73,7 +73,7 @@ namespace Smile
                 Questionlist.Add(temp);
             }
 
-            pageQuest1.txtQ1.Text = Questionlist[1];
+            pageQuest1.txtQ1.Text = Questionlist[0];
             pageQuest1.txtQ2.Text = Questionlist[1];
             pageQuest1.txtQ3.Text = Questionlist[2];
             pageQuest1.txtQ4.Text = Questionlist[3];
