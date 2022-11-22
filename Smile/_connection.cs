@@ -13,6 +13,7 @@ namespace Smile
         private static NpgsqlConnection conn;
 
         public static NpgsqlConnection Conn { get => conn;}
+        public static string Connstring { get => constring; }
 
         public void getConn(string username, string pass)
         {
