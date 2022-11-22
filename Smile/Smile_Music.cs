@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using Smile.Properties;
+using System.IO;
+using System.Reflection;
 
 namespace Smile
 {
     public partial class Smile_Music : Form
     {
-        
         public Smile_Music()
         {
             InitializeComponent();
@@ -29,12 +31,15 @@ namespace Smile
             Smile_Homepage.dashboard.Show();
             this.Hide();
         }
-
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Smile_Homepage.dashboard.Show();
+            this.Hide();
+        }
         private void Smile_Music_Load(object sender, EventArgs e)
         {
             loadMusicList();
         }
-
         private void loadMusicList()
         {
             try
@@ -59,50 +64,21 @@ namespace Smile
                 _connection.Conn.Close();
             }
         }
-
-        private void btnPlay_Click(object sender, EventArgs e)
+        //search music
+        private void lbSearch_Click(object sender, EventArgs e)
         {
-
+            tbSearch.Select();
         }
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPrev_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void musicClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string[] tags = new string[10];
-            if (e.RowIndex >= 0)
-            {
-                r = dgvMusic.Rows[e.RowIndex];
-                Music msc = new Music(
-                    r.Cells["id"].Value.ToString(),
-                    r.Cells["title"].Value.ToString(),
-                    r.Cells["artist"].Value.ToString(),
-                    tags,
-                    Convert.ToInt32(r.Cells["year"].Value.ToString()));
-
-                txtTitle.Text = msc.Title;
-                txtArtist.Text = msc.Artist;
-            }
-        }
-
         private void searchMusic(object sender, EventArgs e)
         {
             if (tbSearch.Text.Length > 0)
             {
+                lbSearch.Visible = false;
                 try
                 {
                     _connection.Conn.Open();
                     sql = "select * from music_select()";
                     cmd = new NpgsqlCommand(sql, _connection.Conn);
-                    //cmd.Parameters.AddWithValue("_musicTitle", tbSearch.Text);
                     object execute = cmd.ExecuteScalar();
                     if (execute != null)
                     {
@@ -135,13 +111,88 @@ namespace Smile
             else
             {
                 loadMusicList();
+                lbSearch.Visible = true;
             }
         }
+        WMPLib.WindowsMediaPlayer player = null;
+        public static string baseMusic = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Resources"));
+        private static string mediaUrl;
+        static bool isPlaying = false;
 
-        private void btnExit_Click(object sender, EventArgs e)
+        //select playlist
+        private void musicClick(object sender, DataGridViewCellEventArgs e)
         {
-            Smile_Homepage.dashboard.Show();
-            this.Hide();
+            string[] tags = new string[10];
+            if (e.RowIndex >= 0)
+            {
+                r = dgvMusic.Rows[e.RowIndex];
+                Music msc = new Music(
+                    r.Cells["id"].Value.ToString(),
+                    r.Cells["title"].Value.ToString(),
+                    r.Cells["artist"].Value.ToString(),
+                    tags,
+                    Convert.ToInt32(r.Cells["year"].Value.ToString()));
+
+                txtTitle.Text = msc.Title;
+                txtArtist.Text = msc.Artist;
+                mediaUrl = baseMusic + @"\" + msc.Title + ".mp3";
+                play();
+
+            }
+        }
+        //btn controller
+        private void lbBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                mediaUrl = dlg.FileName;
+                play();
+            }
+        }
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            play();
+        }
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            stop();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+
+        }
+        //mp3 controller
+        private void play()
+        {
+            MessageBox.Show(mediaUrl);
+            if (isPlaying)
+            {
+                stop();
+                isPlaying = false;
+            }
+            player = new WMPLib.WindowsMediaPlayer();
+            player.URL = mediaUrl;
+            player.controls.play();
+            isPlaying = true;
+        }
+        private void stop()
+        {
+            if (isExist())
+            {
+                player.controls.stop();
+            }
+            isPlaying = false;
+        }
+        private bool isExist()
+        {
+            return (player != null);
         }
     }
 }
