@@ -95,12 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity.cs" />
-    <Compile Include="Component\loginDatabase.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Component\loginDatabase.Designer.cs">
-      <DependentUpon>loginDatabase.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mood.cs" />
     <Compile Include="MoodFrequency.cs" />
     <Compile Include="MoodIntensity.cs" />
@@ -139,6 +133,12 @@
     <Compile Include="Smile_Music.Designer.cs">
       <DependentUpon>Smile_Music.cs</DependentUpon>
     </Compile>
+    <Compile Include="Smile_Postgree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smile_Postgree.Designer.cs">
+      <DependentUpon>Smile_Postgree.cs</DependentUpon>
+    </Compile>
     <Compile Include="Smile_Questionnaire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,9 +154,6 @@
     <Compile Include="User.cs" />
     <Compile Include="UserAccount.cs" />
     <Compile Include="_connection.cs" />
-    <EmbeddedResource Include="Component\loginDatabase.resx">
-      <DependentUpon>loginDatabase.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -174,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Smile_Music.resx">
       <DependentUpon>Smile_Music.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smile_Postgree.resx">
+      <DependentUpon>Smile_Postgree.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Smile_SignUp.resx">
       <DependentUpon>Smile_SignUp.cs</DependentUpon>
