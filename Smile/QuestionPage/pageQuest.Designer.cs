@@ -133,7 +133,7 @@ namespace Smile.QuestionPage
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.radioButton5.Location = new System.Drawing.Point(349, 75);
+            this.radioButton5.Location = new System.Drawing.Point(163, 75);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(17, 16);
             this.radioButton5.TabIndex = 4;
@@ -144,7 +144,7 @@ namespace Smile.QuestionPage
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.radioButton4.Location = new System.Drawing.Point(309, 75);
+            this.radioButton4.Location = new System.Drawing.Point(215, 75);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(17, 16);
             this.radioButton4.TabIndex = 3;
@@ -166,7 +166,7 @@ namespace Smile.QuestionPage
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.radioButton2.Location = new System.Drawing.Point(214, 75);
+            this.radioButton2.Location = new System.Drawing.Point(309, 75);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(17, 16);
             this.radioButton2.TabIndex = 1;
@@ -177,7 +177,7 @@ namespace Smile.QuestionPage
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.radioButton1.Location = new System.Drawing.Point(163, 75);
+            this.radioButton1.Location = new System.Drawing.Point(350, 75);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(17, 16);
             this.radioButton1.TabIndex = 0;
