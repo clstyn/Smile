@@ -112,7 +112,7 @@ namespace Smile
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Location = new System.Drawing.Point(350, 88);
+            this.panel1.Location = new System.Drawing.Point(350, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 250);
             this.panel1.TabIndex = 16;
