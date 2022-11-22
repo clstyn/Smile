@@ -52,8 +52,7 @@ namespace Smile
             Questions.Columns.Add(new DataColumn("trait", typeof(string)));
 
             Random rnd = new Random();
-            /*int number = rnd.Next(1, 2);*/
-            int number = 1;
+            int number = rnd.Next(1, 3);
 
             foreach (DataRow row in Quest.dt.Rows)
             {
