@@ -47,8 +47,11 @@ namespace Smile
                     if ((bool)cmd.ExecuteScalar() == true)
                     {
                         MessageBox.Show("Account Deleted!");
+                        _connection.Conn.Close();
+                        UserAccount.logedUser = null;
+                        Smile_Homepage.dashboard.Show();
+                        this.Parent.Dispose();
                     }
-                    _connection.Conn.Close();
                 }
                 catch (Exception ex)
                 {
@@ -106,9 +109,16 @@ namespace Smile
                 cmd.Parameters.AddWithValue("_birthday", acc.Birthday.ToShortDateString());
                 if ((bool)cmd.ExecuteScalar() == true)
                 {
-
                     MessageBox.Show("Profile Edited!");
+                    UserAccount.logedUser.Username = acc.Username;
+                    UserAccount.logedUser.Name = acc.Name;
+                    UserAccount.logedUser.Password = acc.Password;
+                    UserAccount.logedUser.Gender = acc.Gender;
+                    UserAccount.logedUser.Birthday = acc.Birthday;
+                    _connection.Conn.Close();
 
+                    Smile_Homepage.dashboard.Show();
+                    this.Parent.Dispose();
                 }
             }
             catch (Exception e)

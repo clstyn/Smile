@@ -47,10 +47,7 @@ namespace Smile
                             _connection.Conn.Close();
                             getUserData(acc);
                             this.Hide();
-                            //Smile_Homepage.dashboard.Show();
-                            //Smile_Profile.dashboard.Show();
-                            Smile_Profile profil = new Smile_Profile();
-                            profil.ShowDialog();
+                            Smile_Homepage.dashboard.Show();
                         }
                     }
                     else
@@ -93,6 +90,7 @@ namespace Smile
                         islogin = (string)rd[5]
                     };
                     MessageBox.Show("Sign in success", "Welcome " + UserAccount.logedUser.Name + "!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    _connection.Conn.Close();
                 }
             }
             catch (Exception ex)

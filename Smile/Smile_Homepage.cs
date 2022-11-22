@@ -67,12 +67,22 @@ namespace Smile
             if (UserAccount.logedUser != null)
             {
                 txtWelcome.Text = UserAccount.logedUser.islogin == "true" ? "Welcome, " + UserAccount.logedUser.Name + "!" : "Welcome!";
+                btnLogin.Visible = false;
+                btnProfile.Visible = true;
+
             }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            Smile_Profile profile = new Smile_Profile();
+            profile.Show();
+            this.Hide();
         }
     }
 }
