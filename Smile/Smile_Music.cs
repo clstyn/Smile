@@ -8,12 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
+using Smile.Properties;
+using System.IO;
+using System.Reflection;
 
 namespace Smile
 {
     public partial class Smile_Music : Form
     {
-        
+        WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+        private static string mediaUrl;
+
         public Smile_Music()
         {
             InitializeComponent();
@@ -29,7 +34,6 @@ namespace Smile
             Smile_Homepage.dashboard.Show();
             this.Hide();
         }
-
         private void Smile_Music_Load(object sender, EventArgs e)
         {
             loadMusicList();
@@ -61,7 +65,9 @@ namespace Smile
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-
+            player.URL = mediaUrl;
+            player.controls.play();
+            MessageBox.Show(mediaUrl);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -96,6 +102,7 @@ namespace Smile
         {
             if (tbSearch.Text.Length > 0)
             {
+                lbSearch.Visible = false;
                 try
                 {
                     _connection.Conn.Open();
@@ -134,6 +141,7 @@ namespace Smile
             else
             {
                 loadMusicList();
+                lbSearch.Visible = true;
             }
         }
 
@@ -141,6 +149,31 @@ namespace Smile
         {
             Smile_Homepage.dashboard.Show();
             this.Hide();
+        }
+
+        private void lbBrowse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                mediaUrl = dlg.FileName;
+                play();
+            }
+        }
+        private void play()
+        {
+            player.URL = mediaUrl;
+            player.controls.play();
+        }
+
+        private void lbSearch_Click(object sender, EventArgs e)
+        {
+            tbSearch.Select();
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

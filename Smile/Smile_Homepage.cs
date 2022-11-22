@@ -27,16 +27,18 @@ namespace Smile
             btnLogin.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnHappy.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnSad.BackColor = Color.FromArgb(192, 76, 58, 89);
-            btnDissapointed.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnCry.BackColor = Color.FromArgb(192, 76, 58, 89);
             btnAngry.BackColor = Color.FromArgb(192, 76, 58, 89);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Smile_Login login = new Smile_Login();
-            login.Show();
-            this.Hide();
+            if (UserAccount.logedUser.islogin != "")
+            {
+                Smile_Login login = new Smile_Login();
+                login.Show();
+                this.Hide();
+            }
         }
 
         private void btnSmile_Click(object sender, EventArgs e)
@@ -67,6 +69,7 @@ namespace Smile
             if (UserAccount.logedUser != null)
             {
                 txtWelcome.Text = UserAccount.logedUser.islogin == "true" ? "Welcome, " + UserAccount.logedUser.Name + "!" : "Welcome!";
+                btnLogin.Text = "Profile";
             }
         }
 
