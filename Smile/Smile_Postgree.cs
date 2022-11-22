@@ -35,6 +35,7 @@ namespace Smile
                     _connection.Conn.Close();
                     Smile_Homepage home = new Smile_Homepage();
                     home.Show();
+                    this.Hide();
                 }
                 catch
                 {

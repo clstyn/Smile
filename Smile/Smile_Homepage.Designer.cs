@@ -33,7 +33,6 @@ namespace Smile
             this.home_title = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAngry = new System.Windows.Forms.PictureBox();
-            this.btnDissapointed = new System.Windows.Forms.PictureBox();
             this.btnSad = new System.Windows.Forms.PictureBox();
             this.btnCry = new System.Windows.Forms.PictureBox();
             this.btnHappy = new System.Windows.Forms.PictureBox();
@@ -50,7 +49,6 @@ namespace Smile
             this.btnSmile = new System.Windows.Forms.Label();
             this.txtWelcome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnAngry)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDissapointed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHappy)).BeginInit();
@@ -59,6 +57,7 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.btnSong3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong4)).BeginInit();
+            this.panel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,8 +86,7 @@ namespace Smile
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(469, 183);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(68, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(352, 52);
             this.label1.TabIndex = 2;
@@ -97,33 +95,23 @@ namespace Smile
             // btnAngry
             // 
             this.btnAngry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.btnAngry.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAngry.BackgroundImage")));
+            this.btnAngry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAngry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAngry.Location = new System.Drawing.Point(395, 238);
-            this.btnAngry.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAngry.Location = new System.Drawing.Point(64, 60);
             this.btnAngry.Name = "btnAngry";
             this.btnAngry.Size = new System.Drawing.Size(84, 79);
             this.btnAngry.TabIndex = 3;
             this.btnAngry.TabStop = false;
             this.btnAngry.Click += new System.EventHandler(this.btnEmote_Click);
             // 
-            // btnDissapointed
-            // 
-            this.btnDissapointed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
-            this.btnDissapointed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDissapointed.Location = new System.Drawing.Point(487, 238);
-            this.btnDissapointed.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDissapointed.Name = "btnDissapointed";
-            this.btnDissapointed.Size = new System.Drawing.Size(84, 79);
-            this.btnDissapointed.TabIndex = 4;
-            this.btnDissapointed.TabStop = false;
-            this.btnDissapointed.Click += new System.EventHandler(this.btnEmote_Click);
-            // 
             // btnSad
             // 
             this.btnSad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.btnSad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSad.BackgroundImage")));
+            this.btnSad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSad.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSad.Location = new System.Drawing.Point(577, 238);
-            this.btnSad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSad.Location = new System.Drawing.Point(133, 60);
             this.btnSad.Name = "btnSad";
             this.btnSad.Size = new System.Drawing.Size(84, 79);
             this.btnSad.TabIndex = 5;
@@ -133,9 +121,10 @@ namespace Smile
             // btnCry
             // 
             this.btnCry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.btnCry.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCry.BackgroundImage")));
+            this.btnCry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCry.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCry.Location = new System.Drawing.Point(669, 238);
-            this.btnCry.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCry.Location = new System.Drawing.Point(202, 60);
             this.btnCry.Name = "btnCry";
             this.btnCry.Size = new System.Drawing.Size(84, 79);
             this.btnCry.TabIndex = 6;
@@ -145,9 +134,10 @@ namespace Smile
             // btnHappy
             // 
             this.btnHappy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.btnHappy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHappy.BackgroundImage")));
+            this.btnHappy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnHappy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHappy.Location = new System.Drawing.Point(760, 238);
-            this.btnHappy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHappy.Location = new System.Drawing.Point(270, 60);
             this.btnHappy.Name = "btnHappy";
             this.btnHappy.Size = new System.Drawing.Size(84, 79);
             this.btnHappy.TabIndex = 7;
@@ -220,8 +210,12 @@ namespace Smile
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
-            this.panel1.Location = new System.Drawing.Point(353, 164);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Controls.Add(this.btnAngry);
+            this.panel1.Controls.Add(this.btnSad);
+            this.panel1.Controls.Add(this.btnCry);
+            this.panel1.Controls.Add(this.btnHappy);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(265, 133);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(537, 182);
             this.panel1.TabIndex = 16;
@@ -289,8 +283,7 @@ namespace Smile
             this.txtWelcome.AutoSize = true;
             this.txtWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.txtWelcome.ForeColor = System.Drawing.Color.White;
-            this.txtWelcome.Location = new System.Drawing.Point(560, 43);
-            this.txtWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtWelcome.Location = new System.Drawing.Point(416, 35);
             this.txtWelcome.Name = "txtWelcome";
             this.txtWelcome.Size = new System.Drawing.Size(145, 36);
             this.txtWelcome.TabIndex = 0;
@@ -314,12 +307,6 @@ namespace Smile
             this.Controls.Add(this.btnSong2);
             this.Controls.Add(this.btnSong1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnHappy);
-            this.Controls.Add(this.btnCry);
-            this.Controls.Add(this.btnSad);
-            this.Controls.Add(this.btnDissapointed);
-            this.Controls.Add(this.btnAngry);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -333,7 +320,6 @@ namespace Smile
             this.Load += new System.EventHandler(this.Smile_Dashboard_Load);
             this.VisibleChanged += new System.EventHandler(this.isShow);
             ((System.ComponentModel.ISupportInitialize)(this.btnAngry)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDissapointed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHappy)).EndInit();
@@ -342,6 +328,8 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.btnSong3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -355,7 +343,6 @@ namespace Smile
         private System.Windows.Forms.Label btnLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnAngry;
-        private System.Windows.Forms.PictureBox btnDissapointed;
         private System.Windows.Forms.PictureBox btnSad;
         private System.Windows.Forms.PictureBox btnCry;
         private System.Windows.Forms.PictureBox btnHappy;
