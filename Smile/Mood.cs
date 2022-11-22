@@ -11,12 +11,9 @@ namespace Smile
     {
         private string status;
         private string category;
-        private string totalPoint;
 
         public string Status { get => status; set => status = value; }
         public string Category { get => category; set => category = value; }
-        public string TotalPoint { get => totalPoint; set => totalPoint = value; }
 
-        
     }
 }

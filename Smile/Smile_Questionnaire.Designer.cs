@@ -59,6 +59,7 @@ namespace Smile
             // 
             this.btnNext.AutoSize = true;
             this.btnNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.Location = new System.Drawing.Point(742, 569);
@@ -72,6 +73,7 @@ namespace Smile
             // 
             this.btnPrev.AutoSize = true;
             this.btnPrev.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrev.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.btnPrev.ForeColor = System.Drawing.Color.White;
             this.btnPrev.Location = new System.Drawing.Point(433, 569);
@@ -129,6 +131,7 @@ namespace Smile
             // 
             this.btnFinish.AutoSize = true;
             this.btnFinish.BackColor = System.Drawing.Color.Transparent;
+            this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.btnFinish.ForeColor = System.Drawing.Color.White;
             this.btnFinish.Location = new System.Drawing.Point(1088, 569);
