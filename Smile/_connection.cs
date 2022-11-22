@@ -15,9 +15,9 @@ namespace Smile
         public static NpgsqlConnection Conn { get => conn;}
         public static string Connstring { get => constring; }
 
-        public void getConn(string username, string pass)
+        public void getConn(string username, string pass, string database)
         {
-            constring = "Host=localhost;Port=5432;Username="+username+";Password="+pass+";Database=Michael";
+            constring = "Host=localhost;Port=5432;Username="+username+";Password="+pass+";Database="+database;
             conn = new NpgsqlConnection(constring);
         }
     }
