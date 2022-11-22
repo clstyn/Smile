@@ -33,10 +33,13 @@ namespace Smile
             this.btnSmile = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbSearch = new System.Windows.Forms.Label();
+            this.lbBrowse = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvMusic = new System.Windows.Forms.DataGridView();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnStop = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnNext = new System.Windows.Forms.PictureBox();
             this.btnPrev = new System.Windows.Forms.PictureBox();
@@ -44,18 +47,15 @@ namespace Smile
             this.txtArtist = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.Label();
             this.warnLabel = new System.Windows.Forms.Label();
-            this.lbBrowse = new System.Windows.Forms.Label();
-            this.btnStop = new System.Windows.Forms.PictureBox();
-            this.lbSearch = new System.Windows.Forms.Label();
             this.gradientPanel1 = new Smile.GradientPanel();
             this.btnExit = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMusic)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNext)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrev)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             this.gradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +93,34 @@ namespace Smile
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(283, 322);
             this.panel3.TabIndex = 2;
+            // 
+            // lbSearch
+            // 
+            this.lbSearch.AutoSize = true;
+            this.lbSearch.BackColor = System.Drawing.Color.White;
+            this.lbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSearch.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbSearch.Location = new System.Drawing.Point(5, 52);
+            this.lbSearch.Name = "lbSearch";
+            this.lbSearch.Size = new System.Drawing.Size(50, 13);
+            this.lbSearch.TabIndex = 20;
+            this.lbSearch.Text = "Search...";
+            this.lbSearch.Click += new System.EventHandler(this.lbSearch_Click);
+            // 
+            // lbBrowse
+            // 
+            this.lbBrowse.AutoSize = true;
+            this.lbBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.lbBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbBrowse.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBrowse.ForeColor = System.Drawing.Color.White;
+            this.lbBrowse.Location = new System.Drawing.Point(214, 9);
+            this.lbBrowse.MinimumSize = new System.Drawing.Size(0, 20);
+            this.lbBrowse.Name = "lbBrowse";
+            this.lbBrowse.Size = new System.Drawing.Size(63, 20);
+            this.lbBrowse.TabIndex = 19;
+            this.lbBrowse.Text = "browse...";
+            this.lbBrowse.Click += new System.EventHandler(this.lbBrowse_Click);
             // 
             // label2
             // 
@@ -150,6 +178,17 @@ namespace Smile
             this.panel1.Size = new System.Drawing.Size(926, 94);
             this.panel1.TabIndex = 17;
             // 
+            // btnStop
+            // 
+            this.btnStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
+            this.btnStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnStop.Location = new System.Drawing.Point(581, 38);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(25, 25);
+            this.btnStop.TabIndex = 5;
+            this.btnStop.TabStop = false;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(26, 3);
@@ -183,7 +222,7 @@ namespace Smile
             // 
             this.btnPlay.BackColor = System.Drawing.Color.Transparent;
             this.btnPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.BackgroundImage")));
-            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPlay.Location = new System.Drawing.Point(439, 16);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(69, 69);
@@ -220,45 +259,6 @@ namespace Smile
             this.warnLabel.Name = "warnLabel";
             this.warnLabel.Size = new System.Drawing.Size(0, 13);
             this.warnLabel.TabIndex = 1;
-            // 
-            // lbBrowse
-            // 
-            this.lbBrowse.AutoSize = true;
-            this.lbBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
-            this.lbBrowse.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbBrowse.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBrowse.ForeColor = System.Drawing.Color.White;
-            this.lbBrowse.Location = new System.Drawing.Point(214, 9);
-            this.lbBrowse.MinimumSize = new System.Drawing.Size(0, 20);
-            this.lbBrowse.Name = "lbBrowse";
-            this.lbBrowse.Size = new System.Drawing.Size(63, 20);
-            this.lbBrowse.TabIndex = 19;
-            this.lbBrowse.Text = "browse...";
-            this.lbBrowse.Click += new System.EventHandler(this.lbBrowse_Click);
-            // 
-            // btnStop
-            // 
-            this.btnStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(140)))), ((int)(((byte)(180)))));
-            this.btnStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnStop.Location = new System.Drawing.Point(581, 38);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(25, 25);
-            this.btnStop.TabIndex = 5;
-            this.btnStop.TabStop = false;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
-            // 
-            // lbSearch
-            // 
-            this.lbSearch.AutoSize = true;
-            this.lbSearch.BackColor = System.Drawing.Color.White;
-            this.lbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSearch.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbSearch.Location = new System.Drawing.Point(5, 52);
-            this.lbSearch.Name = "lbSearch";
-            this.lbSearch.Size = new System.Drawing.Size(50, 13);
-            this.lbSearch.TabIndex = 20;
-            this.lbSearch.Text = "Search...";
-            this.lbSearch.Click += new System.EventHandler(this.lbSearch_Click);
             // 
             // gradientPanel1
             // 
@@ -309,10 +309,10 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.dgvMusic)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNext)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrev)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
             this.ResumeLayout(false);
