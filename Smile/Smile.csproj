@@ -95,11 +95,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity.cs" />
+    <Compile Include="EditProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mood.cs" />
     <Compile Include="MoodFrequency.cs" />
     <Compile Include="MoodIntensity.cs" />
     <Compile Include="MoodOverall.cs" />
     <Compile Include="MoodPersistence.cs" />
+    <Compile Include="MoodStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MoodStatus.Designer.cs">
+      <DependentUpon>MoodStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Music.cs" />
     <Compile Include="Component\GradientPanel.cs">
       <SubType>Component</SubType>
@@ -139,6 +151,12 @@
     <Compile Include="Smile_Postgree.Designer.cs">
       <DependentUpon>Smile_Postgree.cs</DependentUpon>
     </Compile>
+    <Compile Include="Smile_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smile_Profile.Designer.cs">
+      <DependentUpon>Smile_Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Smile_Questionnaire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +172,9 @@
     <Compile Include="User.cs" />
     <Compile Include="UserAccount.cs" />
     <Compile Include="_connection.cs" />
+    <EmbeddedResource Include="MoodStatus.resx">
+      <DependentUpon>MoodStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -177,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Smile_Postgree.resx">
       <DependentUpon>Smile_Postgree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smile_Profile.resx">
+      <DependentUpon>Smile_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Smile_Questionnaire.resx">
       <DependentUpon>Smile_Questionnaire.cs</DependentUpon>
