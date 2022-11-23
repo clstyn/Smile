@@ -48,7 +48,7 @@ namespace Smile
                     {
                         MessageBox.Show("Account Deleted!");
                         _connection.Conn.Close();
-                        UserAccount.logedUser = null;
+                        UserAccount.logedUser = new UserAccount();
                         Smile_Homepage.dashboard.Show();
                         this.Parent.Dispose();
                     }

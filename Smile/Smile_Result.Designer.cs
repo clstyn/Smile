@@ -55,6 +55,7 @@ namespace Smile
             this.label3 = new System.Windows.Forms.Label();
             this.pbEmot = new System.Windows.Forms.PictureBox();
             this.lblMood = new System.Windows.Forms.Label();
+            this.btnSmile = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panelMood.SuspendLayout();
             this.panelMoodPoint.SuspendLayout();
@@ -106,7 +107,7 @@ namespace Smile
             this.panel4.Location = new System.Drawing.Point(498, 93);
             this.panel4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(246, 297);
+            this.panel4.Size = new System.Drawing.Size(254, 297);
             this.panel4.TabIndex = 16;
             // 
             // label14
@@ -257,7 +258,6 @@ namespace Smile
             // 
             // lbSuggest
             // 
-            this.lbSuggest.AutoSize = true;
             this.lbSuggest.BackColor = System.Drawing.Color.Transparent;
             this.lbSuggest.Font = new System.Drawing.Font("Futura Md BT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSuggest.ForeColor = System.Drawing.Color.Cornsilk;
@@ -356,6 +356,21 @@ namespace Smile
             this.lblMood.TabIndex = 11;
             this.lblMood.Text = "My Mood Today";
             // 
+            // btnSmile
+            // 
+            this.btnSmile.AutoSize = true;
+            this.btnSmile.BackColor = System.Drawing.Color.Transparent;
+            this.btnSmile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSmile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSmile.ForeColor = System.Drawing.Color.White;
+            this.btnSmile.Location = new System.Drawing.Point(11, 9);
+            this.btnSmile.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btnSmile.Name = "btnSmile";
+            this.btnSmile.Size = new System.Drawing.Size(53, 20);
+            this.btnSmile.TabIndex = 20;
+            this.btnSmile.Text = "Smile";
+            this.btnSmile.Click += new System.EventHandler(this.btnSmile_Click);
+            // 
             // Smile_Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,6 +378,7 @@ namespace Smile
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(896, 454);
+            this.Controls.Add(this.btnSmile);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel4);
@@ -373,11 +389,11 @@ namespace Smile
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Smile_Result";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Smile_Result";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panelMood.ResumeLayout(false);
-            this.panelMood.PerformLayout();
             this.panelMoodPoint.ResumeLayout(false);
             this.panelMoodPoint.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmot)).EndInit();
@@ -413,5 +429,6 @@ namespace Smile
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pbEmot;
         private System.Windows.Forms.Label lblMood;
+        private System.Windows.Forms.Label btnSmile;
     }
 }

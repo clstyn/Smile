@@ -53,6 +53,7 @@ namespace Smile
                     else
                     {
                         MessageBox.Show("Wrong Username or Password");
+                        _connection.Conn.Close();
                     }
                 }
                 catch (Exception ex)

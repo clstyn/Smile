@@ -103,9 +103,9 @@ namespace Smile.QuestionPage
             this.radQ1.Controls.Add(this.radioButton2);
             this.radQ1.Controls.Add(this.radioButton1);
             this.radQ1.Location = new System.Drawing.Point(6, 13);
-            this.radQ1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ1.Margin = new System.Windows.Forms.Padding(2);
             this.radQ1.Name = "radQ1";
-            this.radQ1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ1.Padding = new System.Windows.Forms.Padding(2);
             this.radQ1.Size = new System.Drawing.Size(412, 85);
             this.radQ1.TabIndex = 1;
             this.radQ1.TabStop = false;
@@ -139,7 +139,7 @@ namespace Smile.QuestionPage
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton5.Location = new System.Drawing.Point(122, 61);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(14, 13);
             this.radioButton5.TabIndex = 4;
@@ -151,7 +151,7 @@ namespace Smile.QuestionPage
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton4.Location = new System.Drawing.Point(161, 61);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(14, 13);
             this.radioButton4.TabIndex = 3;
@@ -163,7 +163,7 @@ namespace Smile.QuestionPage
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton3.Location = new System.Drawing.Point(196, 61);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(14, 13);
             this.radioButton3.TabIndex = 2;
@@ -175,7 +175,7 @@ namespace Smile.QuestionPage
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton2.Location = new System.Drawing.Point(232, 61);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(14, 13);
             this.radioButton2.TabIndex = 1;
@@ -187,7 +187,7 @@ namespace Smile.QuestionPage
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton1.Location = new System.Drawing.Point(262, 61);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(14, 13);
             this.radioButton1.TabIndex = 0;
@@ -205,9 +205,9 @@ namespace Smile.QuestionPage
             this.radQ2.Controls.Add(this.radioButton9);
             this.radQ2.Controls.Add(this.radioButton10);
             this.radQ2.Location = new System.Drawing.Point(6, 103);
-            this.radQ2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ2.Margin = new System.Windows.Forms.Padding(2);
             this.radQ2.Name = "radQ2";
-            this.radQ2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ2.Padding = new System.Windows.Forms.Padding(2);
             this.radQ2.Size = new System.Drawing.Size(412, 85);
             this.radQ2.TabIndex = 7;
             this.radQ2.TabStop = false;
@@ -216,7 +216,7 @@ namespace Smile.QuestionPage
             // 
             this.txtQ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.txtQ2.ForeColor = System.Drawing.Color.White;
-            this.txtQ2.Location = new System.Drawing.Point(5, 6);
+            this.txtQ2.Location = new System.Drawing.Point(5, 7);
             this.txtQ2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtQ2.Name = "txtQ2";
             this.txtQ2.Size = new System.Drawing.Size(402, 44);
@@ -252,7 +252,7 @@ namespace Smile.QuestionPage
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton6.Location = new System.Drawing.Point(262, 58);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(14, 13);
             this.radioButton6.TabIndex = 4;
@@ -264,7 +264,7 @@ namespace Smile.QuestionPage
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton7.Location = new System.Drawing.Point(232, 58);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(14, 13);
             this.radioButton7.TabIndex = 3;
@@ -276,7 +276,7 @@ namespace Smile.QuestionPage
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton8.Location = new System.Drawing.Point(196, 58);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton8.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(14, 13);
             this.radioButton8.TabIndex = 2;
@@ -288,7 +288,7 @@ namespace Smile.QuestionPage
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton9.Location = new System.Drawing.Point(161, 58);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton9.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(14, 13);
             this.radioButton9.TabIndex = 1;
@@ -300,7 +300,7 @@ namespace Smile.QuestionPage
             this.radioButton10.AutoSize = true;
             this.radioButton10.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton10.Location = new System.Drawing.Point(123, 58);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(14, 13);
             this.radioButton10.TabIndex = 0;
@@ -318,9 +318,9 @@ namespace Smile.QuestionPage
             this.radQ3.Controls.Add(this.radioButton14);
             this.radQ3.Controls.Add(this.radioButton15);
             this.radQ3.Location = new System.Drawing.Point(6, 193);
-            this.radQ3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ3.Margin = new System.Windows.Forms.Padding(2);
             this.radQ3.Name = "radQ3";
-            this.radQ3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ3.Padding = new System.Windows.Forms.Padding(2);
             this.radQ3.Size = new System.Drawing.Size(412, 85);
             this.radQ3.TabIndex = 8;
             this.radQ3.TabStop = false;
@@ -329,7 +329,7 @@ namespace Smile.QuestionPage
             // 
             this.txtQ3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.txtQ3.ForeColor = System.Drawing.Color.White;
-            this.txtQ3.Location = new System.Drawing.Point(5, 6);
+            this.txtQ3.Location = new System.Drawing.Point(5, 7);
             this.txtQ3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtQ3.Name = "txtQ3";
             this.txtQ3.Size = new System.Drawing.Size(402, 44);
@@ -365,7 +365,7 @@ namespace Smile.QuestionPage
             this.radioButton11.AutoSize = true;
             this.radioButton11.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton11.Location = new System.Drawing.Point(262, 58);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton11.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(14, 13);
             this.radioButton11.TabIndex = 4;
@@ -377,7 +377,7 @@ namespace Smile.QuestionPage
             this.radioButton12.AutoSize = true;
             this.radioButton12.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton12.Location = new System.Drawing.Point(232, 58);
-            this.radioButton12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton12.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(14, 13);
             this.radioButton12.TabIndex = 3;
@@ -389,7 +389,7 @@ namespace Smile.QuestionPage
             this.radioButton13.AutoSize = true;
             this.radioButton13.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton13.Location = new System.Drawing.Point(196, 58);
-            this.radioButton13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton13.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(14, 13);
             this.radioButton13.TabIndex = 2;
@@ -401,7 +401,7 @@ namespace Smile.QuestionPage
             this.radioButton14.AutoSize = true;
             this.radioButton14.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton14.Location = new System.Drawing.Point(160, 58);
-            this.radioButton14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton14.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(14, 13);
             this.radioButton14.TabIndex = 1;
@@ -413,7 +413,7 @@ namespace Smile.QuestionPage
             this.radioButton15.AutoSize = true;
             this.radioButton15.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton15.Location = new System.Drawing.Point(122, 58);
-            this.radioButton15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton15.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(14, 13);
             this.radioButton15.TabIndex = 0;
@@ -431,9 +431,9 @@ namespace Smile.QuestionPage
             this.radQ4.Controls.Add(this.radioButton19);
             this.radQ4.Controls.Add(this.radioButton20);
             this.radQ4.Location = new System.Drawing.Point(7, 284);
-            this.radQ4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ4.Margin = new System.Windows.Forms.Padding(2);
             this.radQ4.Name = "radQ4";
-            this.radQ4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ4.Padding = new System.Windows.Forms.Padding(2);
             this.radQ4.Size = new System.Drawing.Size(412, 85);
             this.radQ4.TabIndex = 9;
             this.radQ4.TabStop = false;
@@ -442,7 +442,7 @@ namespace Smile.QuestionPage
             // 
             this.txtQ4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.txtQ4.ForeColor = System.Drawing.Color.White;
-            this.txtQ4.Location = new System.Drawing.Point(4, 6);
+            this.txtQ4.Location = new System.Drawing.Point(4, 7);
             this.txtQ4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtQ4.Name = "txtQ4";
             this.txtQ4.Size = new System.Drawing.Size(402, 44);
@@ -478,7 +478,7 @@ namespace Smile.QuestionPage
             this.radioButton16.AutoSize = true;
             this.radioButton16.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton16.Location = new System.Drawing.Point(261, 58);
-            this.radioButton16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton16.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton16.Name = "radioButton16";
             this.radioButton16.Size = new System.Drawing.Size(14, 13);
             this.radioButton16.TabIndex = 4;
@@ -490,7 +490,7 @@ namespace Smile.QuestionPage
             this.radioButton17.AutoSize = true;
             this.radioButton17.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton17.Location = new System.Drawing.Point(231, 58);
-            this.radioButton17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton17.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton17.Name = "radioButton17";
             this.radioButton17.Size = new System.Drawing.Size(14, 13);
             this.radioButton17.TabIndex = 3;
@@ -502,7 +502,7 @@ namespace Smile.QuestionPage
             this.radioButton18.AutoSize = true;
             this.radioButton18.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton18.Location = new System.Drawing.Point(195, 58);
-            this.radioButton18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton18.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton18.Name = "radioButton18";
             this.radioButton18.Size = new System.Drawing.Size(14, 13);
             this.radioButton18.TabIndex = 2;
@@ -514,7 +514,7 @@ namespace Smile.QuestionPage
             this.radioButton19.AutoSize = true;
             this.radioButton19.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton19.Location = new System.Drawing.Point(160, 58);
-            this.radioButton19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton19.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Size = new System.Drawing.Size(14, 13);
             this.radioButton19.TabIndex = 1;
@@ -526,7 +526,7 @@ namespace Smile.QuestionPage
             this.radioButton20.AutoSize = true;
             this.radioButton20.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton20.Location = new System.Drawing.Point(122, 58);
-            this.radioButton20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton20.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(14, 13);
             this.radioButton20.TabIndex = 0;
@@ -544,9 +544,9 @@ namespace Smile.QuestionPage
             this.radQ5.Controls.Add(this.radioButton24);
             this.radQ5.Controls.Add(this.radioButton25);
             this.radQ5.Location = new System.Drawing.Point(6, 374);
-            this.radQ5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ5.Margin = new System.Windows.Forms.Padding(2);
             this.radQ5.Name = "radQ5";
-            this.radQ5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radQ5.Padding = new System.Windows.Forms.Padding(2);
             this.radQ5.Size = new System.Drawing.Size(412, 85);
             this.radQ5.TabIndex = 10;
             this.radQ5.TabStop = false;
@@ -555,7 +555,7 @@ namespace Smile.QuestionPage
             // 
             this.txtQ5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Bold);
             this.txtQ5.ForeColor = System.Drawing.Color.White;
-            this.txtQ5.Location = new System.Drawing.Point(5, 6);
+            this.txtQ5.Location = new System.Drawing.Point(5, 7);
             this.txtQ5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtQ5.Name = "txtQ5";
             this.txtQ5.Size = new System.Drawing.Size(402, 44);
@@ -591,7 +591,7 @@ namespace Smile.QuestionPage
             this.radioButton21.AutoSize = true;
             this.radioButton21.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton21.Location = new System.Drawing.Point(262, 58);
-            this.radioButton21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton21.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton21.Name = "radioButton21";
             this.radioButton21.Size = new System.Drawing.Size(14, 13);
             this.radioButton21.TabIndex = 4;
@@ -603,7 +603,7 @@ namespace Smile.QuestionPage
             this.radioButton22.AutoSize = true;
             this.radioButton22.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton22.Location = new System.Drawing.Point(232, 58);
-            this.radioButton22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton22.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton22.Name = "radioButton22";
             this.radioButton22.Size = new System.Drawing.Size(14, 13);
             this.radioButton22.TabIndex = 3;
@@ -615,7 +615,7 @@ namespace Smile.QuestionPage
             this.radioButton23.AutoSize = true;
             this.radioButton23.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton23.Location = new System.Drawing.Point(196, 58);
-            this.radioButton23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton23.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton23.Name = "radioButton23";
             this.radioButton23.Size = new System.Drawing.Size(14, 13);
             this.radioButton23.TabIndex = 2;
@@ -627,7 +627,7 @@ namespace Smile.QuestionPage
             this.radioButton24.AutoSize = true;
             this.radioButton24.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton24.Location = new System.Drawing.Point(160, 58);
-            this.radioButton24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton24.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton24.Name = "radioButton24";
             this.radioButton24.Size = new System.Drawing.Size(14, 13);
             this.radioButton24.TabIndex = 1;
@@ -639,7 +639,7 @@ namespace Smile.QuestionPage
             this.radioButton25.AutoSize = true;
             this.radioButton25.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.radioButton25.Location = new System.Drawing.Point(122, 58);
-            this.radioButton25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton25.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton25.Name = "radioButton25";
             this.radioButton25.Size = new System.Drawing.Size(14, 13);
             this.radioButton25.TabIndex = 0;
@@ -656,7 +656,7 @@ namespace Smile.QuestionPage
             this.Controls.Add(this.radQ3);
             this.Controls.Add(this.radQ2);
             this.Controls.Add(this.radQ1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "pageQuest";
             this.Size = new System.Drawing.Size(429, 468);
             this.radQ1.ResumeLayout(false);

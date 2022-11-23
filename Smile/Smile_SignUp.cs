@@ -52,9 +52,9 @@ namespace Smile
 
                         var newAcc = new UserAccount
                         {
-                            Username = tbName.Text,
+                            Username = tbUsernama.Text,
                             Password = tbPassword.Text,
-                            Name = tbUsernama.Text,
+                            Name = tbName.Text,
                             Gender = radMale.Checked ? "Male" : "Female",
                             Birthday = birthday,
                             Age = age
@@ -96,7 +96,6 @@ namespace Smile
                 }
                 else
                 {
-                    MessageBox.Show("1");
                     _connection.Conn.Close();
                     signUpAcc(newAcc);
                 }

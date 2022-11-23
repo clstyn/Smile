@@ -103,9 +103,19 @@ namespace Smile.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Mantra_Hujan {
+        internal static byte[] Music1 {
             get {
-                object obj = ResourceManager.GetObject("Mantra_Hujan", resourceCulture);
+                object obj = ResourceManager.GetObject("Music1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Music2 {
+            get {
+                object obj = ResourceManager.GetObject("Music2", resourceCulture);
                 return ((byte[])(obj));
             }
         }

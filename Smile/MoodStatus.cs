@@ -31,6 +31,8 @@ namespace Smile
                 progPersistence.Value = QResult.result.Persistence.Proud;
 
                 lbSuggest.Text = QResult.result.Suggest;
+
+                /*pbEmot.Image = Bitmap(Smile.Properties.Resources.happy);*/
             }
         }
     }

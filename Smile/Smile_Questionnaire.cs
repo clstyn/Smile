@@ -16,7 +16,7 @@ namespace Smile
         public Smile_Questionnaire()
         {
             InitializeComponent();
-            btnPrev.Visible = false;
+            /*btnPrev.Visible = false;*/
         }
 
         private int pagenumber=1;
@@ -94,7 +94,7 @@ namespace Smile
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if(pagenumber==1)
+            if (pagenumber == 1)
             {
                 pagenumber += 1;
                 txtPage.Text = pagenumber.ToString() + "/4";
@@ -102,7 +102,7 @@ namespace Smile
                 pageQuest2.Visible = true;
                 btnPrev.Visible = true;
             }
-            else if(pagenumber == 2)
+            else if (pagenumber == 2)
             {
                 pagenumber += 1;
                 txtPage.Text = pagenumber.ToString() + "/4";
@@ -149,7 +149,7 @@ namespace Smile
         private void btnFinish_Click(object sender, EventArgs e)
         {
             int check = CheckInput();
-            if(check == 0)
+            if (check == 0)
             {
                 mOverall = new MoodOverall();
                 mFrequency = new MoodFrequency();
@@ -163,18 +163,18 @@ namespace Smile
                     Overall = mOverall,
                     Frequency = mFrequency,
                     Intensity = mIntensity,
-                    Persistence = mPersistence,
-                    Suggest = QResult.getSuggest(),
-                    TotalPositive = QResult.calTotalPositive(),
-                    TotalNegative = QResult.calTotalNegative()
+                    Persistence = mPersistence
                 };
+                QResult.result.TotalPositive = calTotalPositive();
+                QResult.result.TotalNegative = calTotalNegative();
+                QResult.result.Suggest = QResult.getSuggest();
                 if (UserAccount.logedUser != null)
                 {
                     if (UserAccount.logedUser.islogin == "true")
                     {
                         QResult.result.Userid = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Id : "";
                         saveResult();
-                        
+
                     }
                     Smile_Result res = new Smile_Result();
                     res.Show();
@@ -189,6 +189,18 @@ namespace Smile
                     this.Dispose();
                 }
             }
+        }
+        public static int calTotalPositive()
+        {
+            int total = 0;
+            total = (QResult.result.Overall.Happy + QResult.result.Frequency.Excited + QResult.result.Intensity.Enthusiastic + QResult.result.Persistence.Proud) / 4;
+            return total;
+        }
+        public static int calTotalNegative()
+        {
+            int total = 0;
+            total = (QResult.result.Overall.Depressed + QResult.result.Frequency.Sad + QResult.result.Intensity.Afraid + QResult.result.Persistence.Angry) / 4;
+            return total;
         }
 
         string sql;
@@ -221,7 +233,7 @@ namespace Smile
                 }
                 _connection.Conn.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
                 _connection.Conn.Close();
@@ -233,8 +245,9 @@ namespace Smile
             List<string> notAnswered = new List<string>();
 
             //page1
-            if(pageQuest1.radioButton1.Checked || pageQuest1.radioButton2.Checked || pageQuest1.radioButton3.Checked || pageQuest1.radioButton4.Checked || pageQuest1.radioButton5.Checked == true)
-            {} else
+            if (pageQuest1.radioButton1.Checked || pageQuest1.radioButton2.Checked || pageQuest1.radioButton3.Checked || pageQuest1.radioButton4.Checked || pageQuest1.radioButton5.Checked == true)
+            { }
+            else
             {
                 notAnswered.Add("1");
             }
@@ -359,13 +372,13 @@ namespace Smile
                 notAnswered.Add("20");
             }
 
-            if(notAnswered.Count != 0)
+            if (notAnswered.Count != 0)
             {
                 string txtNotAnswered = "You haven't answer question number ";
-                for (int i = 0; i<notAnswered.Count; i++)
+                for (int i = 0; i < notAnswered.Count; i++)
                 {
                     txtNotAnswered += notAnswered[i];
-                    if (i!=notAnswered.Count-1)
+                    if (i != notAnswered.Count - 1)
                     {
                         txtNotAnswered += ", ";
                     }
@@ -382,7 +395,7 @@ namespace Smile
 
         private void confirmFinish()
         {
-            int degree=0;
+            int degree = 0;
 
             //page 1
             //q1
@@ -850,22 +863,22 @@ namespace Smile
             }
             commitPoint(degree, Questions.Rows[19]["qtype"].ToString(), Questions.Rows[19]["trait"].ToString());
         }
-        
+
         private void commitPoint(int deg, string qtype, string trait)
         {
-            if(qtype == "Overall" || qtype == "Overall ")
+            if (qtype == "Overall" || qtype == "Overall ")
             {
                 mOverall.addPoint(deg, trait);
             }
-            else if(qtype == "Frequency" || qtype == "Frequency ")
+            else if (qtype == "Frequency" || qtype == "Frequency ")
             {
                 mFrequency.addPoint(deg, trait);
             }
-            else  if(qtype == "Intensity" || qtype == "Intensity ")
+            else if (qtype == "Intensity" || qtype == "Intensity ")
             {
                 mIntensity.addPoint(deg, trait);
             }
-            else if(qtype == "Persistence" || qtype == "Persistence ")
+            else if (qtype == "Persistence" || qtype == "Persistence ")
             {
                 mPersistence.addPoint(deg, trait);
             }

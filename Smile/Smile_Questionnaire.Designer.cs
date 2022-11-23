@@ -116,39 +116,39 @@ namespace Smile
             // 
             // pageQuest1
             // 
-            this.pageQuest1.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest1.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.pageQuest1.Location = new System.Drawing.Point(247, -8);
             this.pageQuest1.Margin = new System.Windows.Forms.Padding(2);
             this.pageQuest1.Name = "pageQuest1";
-            this.pageQuest1.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest1.TabIndex = 20;
+            this.pageQuest1.Size = new System.Drawing.Size(429, 468);
+            this.pageQuest1.TabIndex = 25;
             // 
             // pageQuest2
             // 
-            this.pageQuest2.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest2.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.pageQuest2.Location = new System.Drawing.Point(247, -8);
             this.pageQuest2.Margin = new System.Windows.Forms.Padding(2);
             this.pageQuest2.Name = "pageQuest2";
-            this.pageQuest2.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest2.TabIndex = 21;
+            this.pageQuest2.Size = new System.Drawing.Size(429, 468);
+            this.pageQuest2.TabIndex = 26;
             // 
             // pageQuest3
             // 
-            this.pageQuest3.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest3.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.pageQuest3.Location = new System.Drawing.Point(247, -8);
             this.pageQuest3.Margin = new System.Windows.Forms.Padding(2);
             this.pageQuest3.Name = "pageQuest3";
-            this.pageQuest3.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest3.TabIndex = 22;
+            this.pageQuest3.Size = new System.Drawing.Size(429, 468);
+            this.pageQuest3.TabIndex = 27;
             // 
             // pageQuest4
             // 
-            this.pageQuest4.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest4.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.pageQuest4.Location = new System.Drawing.Point(247, -8);
             this.pageQuest4.Margin = new System.Windows.Forms.Padding(2);
             this.pageQuest4.Name = "pageQuest4";
-            this.pageQuest4.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest4.TabIndex = 23;
+            this.pageQuest4.Size = new System.Drawing.Size(429, 468);
+            this.pageQuest4.TabIndex = 28;
             // 
             // Smile_Questionnaire
             // 
@@ -157,12 +157,12 @@ namespace Smile
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(912, 493);
+            this.Controls.Add(this.pageQuest1);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.txtPage);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnSmile);
-            this.Controls.Add(this.pageQuest1);
             this.Controls.Add(this.pageQuest2);
             this.Controls.Add(this.pageQuest3);
             this.Controls.Add(this.pageQuest4);
@@ -187,10 +187,10 @@ namespace Smile
         private System.Windows.Forms.Label btnNext;
         private System.Windows.Forms.Label btnPrev;
         private System.Windows.Forms.Label txtPage;
+        private System.Windows.Forms.Label btnFinish;
         private QuestionPage.pageQuest pageQuest1;
         private QuestionPage.pageQuest pageQuest2;
         private QuestionPage.pageQuest pageQuest3;
         private QuestionPage.pageQuest pageQuest4;
-        private System.Windows.Forms.Label btnFinish;
     }
 }

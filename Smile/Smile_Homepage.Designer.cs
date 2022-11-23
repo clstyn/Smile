@@ -38,10 +38,6 @@ namespace Smile
             this.btnHappy = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSong1 = new System.Windows.Forms.PictureBox();
-            this.btnSong2 = new System.Windows.Forms.PictureBox();
-            this.btnSong3 = new System.Windows.Forms.PictureBox();
-            this.btnSong5 = new System.Windows.Forms.PictureBox();
-            this.btnSong4 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gradientPanel1 = new Smile.GradientPanel();
             this.btnExit = new System.Windows.Forms.Label();
@@ -53,10 +49,6 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHappy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong4)).BeginInit();
             this.panel1.SuspendLayout();
             this.gradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -161,44 +153,14 @@ namespace Smile
             // 
             // btnSong1
             // 
-            this.btnSong1.Location = new System.Drawing.Point(414, 339);
+            this.btnSong1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.btnSong1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSong1.BackgroundImage")));
+            this.btnSong1.Location = new System.Drawing.Point(400, 345);
             this.btnSong1.Name = "btnSong1";
-            this.btnSong1.Size = new System.Drawing.Size(103, 130);
+            this.btnSong1.Size = new System.Drawing.Size(136, 130);
             this.btnSong1.TabIndex = 9;
             this.btnSong1.TabStop = false;
             this.btnSong1.Click += new System.EventHandler(this.btnSong_Click);
-            // 
-            // btnSong2
-            // 
-            this.btnSong2.Location = new System.Drawing.Point(522, 364);
-            this.btnSong2.Name = "btnSong2";
-            this.btnSong2.Size = new System.Drawing.Size(69, 87);
-            this.btnSong2.TabIndex = 10;
-            this.btnSong2.TabStop = false;
-            // 
-            // btnSong3
-            // 
-            this.btnSong3.Location = new System.Drawing.Point(340, 364);
-            this.btnSong3.Name = "btnSong3";
-            this.btnSong3.Size = new System.Drawing.Size(69, 87);
-            this.btnSong3.TabIndex = 11;
-            this.btnSong3.TabStop = false;
-            // 
-            // btnSong5
-            // 
-            this.btnSong5.Location = new System.Drawing.Point(281, 374);
-            this.btnSong5.Name = "btnSong5";
-            this.btnSong5.Size = new System.Drawing.Size(55, 69);
-            this.btnSong5.TabIndex = 12;
-            this.btnSong5.TabStop = false;
-            // 
-            // btnSong4
-            // 
-            this.btnSong4.Location = new System.Drawing.Point(596, 374);
-            this.btnSong4.Name = "btnSong4";
-            this.btnSong4.Size = new System.Drawing.Size(55, 69);
-            this.btnSong4.TabIndex = 13;
-            this.btnSong4.TabStop = false;
             // 
             // panel1
             // 
@@ -286,10 +248,6 @@ namespace Smile
             this.ClientSize = new System.Drawing.Size(912, 493);
             this.Controls.Add(this.home_title);
             this.Controls.Add(this.gradientPanel1);
-            this.Controls.Add(this.btnSong4);
-            this.Controls.Add(this.btnSong5);
-            this.Controls.Add(this.btnSong3);
-            this.Controls.Add(this.btnSong2);
             this.Controls.Add(this.btnSong1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnHappy);
@@ -312,10 +270,6 @@ namespace Smile
             ((System.ComponentModel.ISupportInitialize)(this.btnCry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHappy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSong1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSong4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.gradientPanel1.ResumeLayout(false);
             this.gradientPanel1.PerformLayout();
@@ -335,10 +289,6 @@ namespace Smile
         private System.Windows.Forms.PictureBox btnHappy;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox btnSong1;
-        private System.Windows.Forms.PictureBox btnSong2;
-        private System.Windows.Forms.PictureBox btnSong3;
-        private System.Windows.Forms.PictureBox btnSong5;
-        private System.Windows.Forms.PictureBox btnSong4;
         private System.Windows.Forms.Label btnSmile;
         private GradientPanel gradientPanel1;
         private System.Windows.Forms.Panel panel1;

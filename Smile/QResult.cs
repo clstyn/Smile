@@ -83,17 +83,5 @@ namespace Smile
             }
             return suggestion+add;
         }
-        public static int calTotalPositive()
-        {
-            int total = 0;
-            total = (QResult.result.Overall.Happy + QResult.result.Frequency.Excited + QResult.result.Intensity.Enthusiastic + QResult.result.Persistence.Proud) / 4;
-            return total;
-        }
-        public static int calTotalNegative()
-        {
-            int total = 0;
-            total = (QResult.result.Overall.Depressed + QResult.result.Frequency.Sad + QResult.result.Intensity.Afraid + QResult.result.Persistence.Angry) / 4;
-            return total;
-        }
     }
 }

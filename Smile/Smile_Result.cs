@@ -27,7 +27,14 @@ namespace Smile
                 progPersistence.Value = QResult.result.Persistence.Proud;
 
                 lbSuggest.Text = QResult.result.Suggest;
+
             }
+        }
+
+        private void btnSmile_Click(object sender, EventArgs e)
+        {
+            Smile_Homepage.dashboard.Show();
+            this.Dispose();
         }
     }
 }
