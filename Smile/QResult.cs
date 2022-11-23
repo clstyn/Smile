@@ -30,7 +30,7 @@ namespace Smile
 
         public static string getSuggest()
         {
-            string suggestion = "";
+            string suggestion = "test";
 
             return suggestion;
         }

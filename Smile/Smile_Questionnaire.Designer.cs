@@ -34,11 +34,11 @@ namespace Smile
             this.btnNext = new System.Windows.Forms.Label();
             this.btnPrev = new System.Windows.Forms.Label();
             this.txtPage = new System.Windows.Forms.Label();
+            this.btnFinish = new System.Windows.Forms.Label();
             this.pageQuest1 = new Smile.QuestionPage.pageQuest();
             this.pageQuest2 = new Smile.QuestionPage.pageQuest();
             this.pageQuest3 = new Smile.QuestionPage.pageQuest();
             this.pageQuest4 = new Smile.QuestionPage.pageQuest();
-            this.btnFinish = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSmile
@@ -99,42 +99,6 @@ namespace Smile
             this.txtPage.TabIndex = 19;
             this.txtPage.Text = "1/4";
             // 
-            // pageQuest1
-            // 
-            this.pageQuest1.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest1.Location = new System.Drawing.Point(232, -8);
-            this.pageQuest1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pageQuest1.Name = "pageQuest1";
-            this.pageQuest1.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest1.TabIndex = 20;
-            // 
-            // pageQuest2
-            // 
-            this.pageQuest2.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest2.Location = new System.Drawing.Point(232, -8);
-            this.pageQuest2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pageQuest2.Name = "pageQuest2";
-            this.pageQuest2.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest2.TabIndex = 21;
-            // 
-            // pageQuest3
-            // 
-            this.pageQuest3.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest3.Location = new System.Drawing.Point(232, -8);
-            this.pageQuest3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pageQuest3.Name = "pageQuest3";
-            this.pageQuest3.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest3.TabIndex = 22;
-            // 
-            // pageQuest4
-            // 
-            this.pageQuest4.BackColor = System.Drawing.Color.Transparent;
-            this.pageQuest4.Location = new System.Drawing.Point(232, -8);
-            this.pageQuest4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pageQuest4.Name = "pageQuest4";
-            this.pageQuest4.Size = new System.Drawing.Size(463, 468);
-            this.pageQuest4.TabIndex = 23;
-            // 
             // btnFinish
             // 
             this.btnFinish.AutoSize = true;
@@ -149,6 +113,42 @@ namespace Smile
             this.btnFinish.TabIndex = 24;
             this.btnFinish.Text = "Finish";
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
+            // 
+            // pageQuest1
+            // 
+            this.pageQuest1.BackColor = System.Drawing.Color.Transparent;
+            this.pageQuest1.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest1.Margin = new System.Windows.Forms.Padding(2);
+            this.pageQuest1.Name = "pageQuest1";
+            this.pageQuest1.Size = new System.Drawing.Size(463, 468);
+            this.pageQuest1.TabIndex = 20;
+            // 
+            // pageQuest2
+            // 
+            this.pageQuest2.BackColor = System.Drawing.Color.Transparent;
+            this.pageQuest2.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest2.Margin = new System.Windows.Forms.Padding(2);
+            this.pageQuest2.Name = "pageQuest2";
+            this.pageQuest2.Size = new System.Drawing.Size(463, 468);
+            this.pageQuest2.TabIndex = 21;
+            // 
+            // pageQuest3
+            // 
+            this.pageQuest3.BackColor = System.Drawing.Color.Transparent;
+            this.pageQuest3.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest3.Margin = new System.Windows.Forms.Padding(2);
+            this.pageQuest3.Name = "pageQuest3";
+            this.pageQuest3.Size = new System.Drawing.Size(463, 468);
+            this.pageQuest3.TabIndex = 22;
+            // 
+            // pageQuest4
+            // 
+            this.pageQuest4.BackColor = System.Drawing.Color.Transparent;
+            this.pageQuest4.Location = new System.Drawing.Point(232, -8);
+            this.pageQuest4.Margin = new System.Windows.Forms.Padding(2);
+            this.pageQuest4.Name = "pageQuest4";
+            this.pageQuest4.Size = new System.Drawing.Size(463, 468);
+            this.pageQuest4.TabIndex = 23;
             // 
             // Smile_Questionnaire
             // 
@@ -168,7 +168,7 @@ namespace Smile
             this.Controls.Add(this.pageQuest4);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Smile_Questionnaire";

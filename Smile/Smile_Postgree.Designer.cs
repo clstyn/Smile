@@ -32,16 +32,16 @@ namespace Smile
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Smile_Postgree));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbDB = new System.Windows.Forms.Label();
+            this.lbPass = new System.Windows.Forms.Label();
+            this.lbUname = new System.Windows.Forms.Label();
+            this.tbDatabase = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Label();
-            this.tbDatabase = new System.Windows.Forms.TextBox();
-            this.lbUname = new System.Windows.Forms.Label();
-            this.lbPass = new System.Windows.Forms.Label();
-            this.lbDB = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,53 @@ namespace Smile
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 256);
             this.panel2.TabIndex = 0;
+            // 
+            // lbDB
+            // 
+            this.lbDB.AutoSize = true;
+            this.lbDB.BackColor = System.Drawing.Color.White;
+            this.lbDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDB.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbDB.Location = new System.Drawing.Point(93, 161);
+            this.lbDB.Name = "lbDB";
+            this.lbDB.Size = new System.Drawing.Size(60, 13);
+            this.lbDB.TabIndex = 27;
+            this.lbDB.Text = "DB name...";
+            this.lbDB.Click += new System.EventHandler(this.lbDB_Click);
+            // 
+            // lbPass
+            // 
+            this.lbPass.AutoSize = true;
+            this.lbPass.BackColor = System.Drawing.Color.White;
+            this.lbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPass.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbPass.Location = new System.Drawing.Point(92, 121);
+            this.lbPass.Name = "lbPass";
+            this.lbPass.Size = new System.Drawing.Size(62, 13);
+            this.lbPass.TabIndex = 26;
+            this.lbPass.Text = "Password...";
+            this.lbPass.Click += new System.EventHandler(this.lbPass_Click);
+            // 
+            // lbUname
+            // 
+            this.lbUname.AutoSize = true;
+            this.lbUname.BackColor = System.Drawing.Color.White;
+            this.lbUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUname.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.lbUname.Location = new System.Drawing.Point(91, 96);
+            this.lbUname.Name = "lbUname";
+            this.lbUname.Size = new System.Drawing.Size(64, 13);
+            this.lbUname.TabIndex = 25;
+            this.lbUname.Text = "Username...";
+            this.lbUname.Click += new System.EventHandler(this.lbUname_Click);
+            // 
+            // tbDatabase
+            // 
+            this.tbDatabase.Location = new System.Drawing.Point(23, 158);
+            this.tbDatabase.Name = "tbDatabase";
+            this.tbDatabase.Size = new System.Drawing.Size(206, 20);
+            this.tbDatabase.TabIndex = 24;
+            this.tbDatabase.TextChanged += new System.EventHandler(this.fillDB);
             // 
             // btnBack
             // 
@@ -138,54 +185,6 @@ namespace Smile
             this.btnExit.Size = new System.Drawing.Size(15, 15);
             this.btnExit.TabIndex = 22;
             this.btnExit.Text = "X";
-            // 
-            // tbDatabase
-            // 
-            this.tbDatabase.Location = new System.Drawing.Point(23, 158);
-            this.tbDatabase.Name = "tbDatabase";
-            this.tbDatabase.Size = new System.Drawing.Size(206, 20);
-            this.tbDatabase.TabIndex = 24;
-            this.tbDatabase.UseSystemPasswordChar = true;
-            this.tbDatabase.TextChanged += new System.EventHandler(this.fillDB);
-            // 
-            // lbUname
-            // 
-            this.lbUname.AutoSize = true;
-            this.lbUname.BackColor = System.Drawing.Color.White;
-            this.lbUname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUname.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbUname.Location = new System.Drawing.Point(91, 96);
-            this.lbUname.Name = "lbUname";
-            this.lbUname.Size = new System.Drawing.Size(64, 13);
-            this.lbUname.TabIndex = 25;
-            this.lbUname.Text = "Username...";
-            this.lbUname.Click += new System.EventHandler(this.lbUname_Click);
-            // 
-            // lbPass
-            // 
-            this.lbPass.AutoSize = true;
-            this.lbPass.BackColor = System.Drawing.Color.White;
-            this.lbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPass.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbPass.Location = new System.Drawing.Point(92, 121);
-            this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(62, 13);
-            this.lbPass.TabIndex = 26;
-            this.lbPass.Text = "Password...";
-            this.lbPass.Click += new System.EventHandler(this.lbPass_Click);
-            // 
-            // lbDB
-            // 
-            this.lbDB.AutoSize = true;
-            this.lbDB.BackColor = System.Drawing.Color.White;
-            this.lbDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDB.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbDB.Location = new System.Drawing.Point(93, 161);
-            this.lbDB.Name = "lbDB";
-            this.lbDB.Size = new System.Drawing.Size(60, 13);
-            this.lbDB.TabIndex = 27;
-            this.lbDB.Text = "DB name...";
-            this.lbDB.Click += new System.EventHandler(this.lbDB_Click);
             // 
             // Smile_Postgree
             // 

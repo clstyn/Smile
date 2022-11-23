@@ -90,6 +90,7 @@ namespace Smile
                     };
                     MessageBox.Show("Sign in success", "Welcome " + UserAccount.logedUser.Name + "!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                _connection.Conn.Close();
             }
             catch (Exception ex)
             {
