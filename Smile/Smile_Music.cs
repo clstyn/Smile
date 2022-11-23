@@ -135,7 +135,8 @@ namespace Smile
 
                 txtTitle.Text = msc.Title;
                 txtArtist.Text = msc.Artist;
-                mediaUrl = baseMusic + @"\" + msc.Title + ".mp3";
+
+                mediaUrl = @"E:\KULIAH\ProjunPBO\SmileProjun\Smile\Smile\Resources\" + msc.Title + ".mp3";
                 play();
 
             }

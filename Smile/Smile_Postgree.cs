@@ -33,6 +33,7 @@ namespace Smile
                     _connection.Conn.Open();
                     MessageBox.Show("Koneksi berhasil!");
                     _connection.Conn.Close();
+                    this.Hide();
                     Smile_Homepage home = new Smile_Homepage();
                     home.Show();
                 }

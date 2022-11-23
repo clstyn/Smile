@@ -159,9 +159,58 @@ namespace Smile
 
                 confirmFinish();
 
-                MessageBox.Show("your point list :" + " Happy = " + mOverall.Happy.ToString() + " Depressed = " + mOverall.Depressed.ToString() +
-                    " Excited = " + mFrequency.Excited.ToString() + " Sad = " + mFrequency.Sad.ToString() + " Enthusiastic = " + mIntensity.Enthusiastic.ToString() +
-                    " Afraid = " + mIntensity.Afraid.ToString() + " Proud = " + mPersistence.Proud.ToString() + " Angry = " + mPersistence.Angry.ToString());
+                QResult.result = new QResult
+                {
+                    Userid = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Id : "",
+                    Date = DateTime.Now,
+                    Overall = mOverall,
+                    Frequency = mFrequency,
+                    Intensity = mIntensity,
+                    Persistence = mPersistence,
+                    Suggest = QResult.getSuggest()
+                };
+
+                if(UserAccount.logedUser.islogin == "true")
+                {
+                    saveResult();
+                }
+            }
+        }
+
+        string sql;
+        static NpgsqlCommand cmd;
+        private void saveResult()
+        {
+            int[] point = {
+                QResult.result.Overall.Happy,
+                QResult.result.Overall.Depressed,
+                QResult.result.Frequency.Excited,
+                QResult.result.Frequency.Sad,
+                QResult.result.Intensity.Enthusiastic,
+                QResult.result.Intensity.Afraid,
+                QResult.result.Persistence.Proud,
+                QResult.result.Persistence.Angry
+            };
+            try
+            {
+                _connection.Conn.Open();
+                sql = @"select * from saveResult(:_userid, :_dateRes, :_point, :_suggest)";
+                cmd = new NpgsqlCommand(sql, _connection.Conn);
+                cmd.Parameters.AddWithValue("_userid", QResult.result.Userid);
+                cmd.Parameters.AddWithValue("_dateRes", QResult.result.Date);
+                cmd.Parameters.AddWithValue("_point", point);
+                cmd.Parameters.AddWithValue("_suggest", QResult.result.Suggest);
+                if ((int)cmd.ExecuteScalar() == 1)
+                {
+                    MessageBox.Show("Result saved!");
+                    _connection.Conn.Close();
+                }
+                _connection.Conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+                _connection.Conn.Close();
             }
         }
 
@@ -806,6 +855,11 @@ namespace Smile
             {
                 mPersistence.addPoint(deg, trait);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
