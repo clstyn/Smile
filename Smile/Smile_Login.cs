@@ -47,9 +47,7 @@ namespace Smile
                             _connection.Conn.Close();
                             getUserData(acc);
                             this.Hide();
-                            //Smile_Homepage.dashboard.Show();
-                            Smile_Profile profil = new Smile_Profile();
-                            profil.Show();
+                            Smile_Homepage.dashboard.Show();
                         }
                     }
                     else

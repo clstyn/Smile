@@ -97,8 +97,8 @@ namespace Smile
                 else
                 {
                     MessageBox.Show("1");
-                    signUpAcc(newAcc);
                     _connection.Conn.Close();
+                    signUpAcc(newAcc);
                 }
             }
             catch (Exception e)
@@ -126,10 +126,11 @@ namespace Smile
                 {
                     MessageBox.Show("Sign Up success!");
                     _connection.Conn.Close();
-                    this.Hide();
+                    this.Dispose();
                     Smile_Login login = new Smile_Login();
                     login.Show();
                 }
+                _connection.Conn.Close();
             }
             catch (Exception e)
             {

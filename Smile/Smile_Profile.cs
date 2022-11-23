@@ -53,5 +53,19 @@ namespace Smile
                 lblName.Text = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Name + "!" : "Name";
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Smile_Homepage.dashboard.Show();
+            this.Dispose();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            UserAccount.logedUser = new UserAccount();
+            Smile_Login login = new Smile_Login();
+            login.Show();
+            this.Dispose();
+        }
     }
 }

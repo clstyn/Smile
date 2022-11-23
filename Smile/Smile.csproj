@@ -163,6 +163,12 @@
     <Compile Include="Smile_Questionnaire.Designer.cs">
       <DependentUpon>Smile_Questionnaire.cs</DependentUpon>
     </Compile>
+    <Compile Include="Smile_Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smile_Result.Designer.cs">
+      <DependentUpon>Smile_Result.cs</DependentUpon>
+    </Compile>
     <Compile Include="Smile_SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     <EmbeddedResource Include="Smile_Questionnaire.resx">
       <DependentUpon>Smile_Questionnaire.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Smile_Result.resx">
+      <DependentUpon>Smile_Result.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Smile_SignUp.resx">
       <DependentUpon>Smile_SignUp.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,6 +256,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mantra Hujan.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dissapointed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

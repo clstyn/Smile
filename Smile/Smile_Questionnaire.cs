@@ -149,7 +149,6 @@ namespace Smile
         private void btnFinish_Click(object sender, EventArgs e)
         {
             int check = CheckInput();
-
             if(check == 0)
             {
                 mOverall = new MoodOverall();
@@ -158,21 +157,36 @@ namespace Smile
                 mPersistence = new MoodPersistence();
 
                 confirmFinish();
-
                 QResult.result = new QResult
                 {
-                    Userid = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Id : "",
                     Date = DateTime.Now,
                     Overall = mOverall,
                     Frequency = mFrequency,
                     Intensity = mIntensity,
                     Persistence = mPersistence,
-                    Suggest = QResult.getSuggest()
+                    Suggest = QResult.getSuggest(),
+                    TotalPositive = QResult.calTotalPositive(),
+                    TotalNegative = QResult.calTotalNegative()
                 };
-
-                if(UserAccount.logedUser.islogin == "true")
+                if (UserAccount.logedUser != null)
                 {
-                    saveResult();
+                    if (UserAccount.logedUser.islogin == "true")
+                    {
+                        QResult.result.Userid = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Id : "";
+                        saveResult();
+                        
+                    }
+                    Smile_Result res = new Smile_Result();
+                    res.Show();
+                    _connection.Conn.Close();
+                    this.Dispose();
+                }
+                else
+                {
+                    Smile_Result res = new Smile_Result();
+                    res.Show();
+                    _connection.Conn.Close();
+                    this.Dispose();
                 }
             }
         }
@@ -194,7 +208,7 @@ namespace Smile
             try
             {
                 _connection.Conn.Open();
-                sql = @"select * from saveResult(:_userid, :_dateRes, :_point, :_suggest)";
+                sql = @"select * from saveresult(:_userid, :_dateRes, :_point, :_suggest)";
                 cmd = new NpgsqlCommand(sql, _connection.Conn);
                 cmd.Parameters.AddWithValue("_userid", QResult.result.Userid);
                 cmd.Parameters.AddWithValue("_dateRes", QResult.result.Date);

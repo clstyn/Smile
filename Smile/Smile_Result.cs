@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Smile
 {
-    public partial class MoodStatus : UserControl
+    public partial class Smile_Result : Form
     {
-        public MoodStatus()
+        public Smile_Result()
         {
             InitializeComponent();
-        }
-
-        private void MoodStatus_Load(object sender, EventArgs e)
-        {
             if (QResult.result != null)
             {
                 lbPositive.Text = QResult.result.TotalPositive.ToString() + "/100";

@@ -33,9 +33,18 @@ namespace Smile
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Smile_Login login = new Smile_Login();
-            login.Show();
-            this.Hide();
+            if (btnLogin.Text == "Login")
+            {
+                Smile_Login login = new Smile_Login();
+                login.Show();
+                this.Hide();
+            }
+            else if (btnLogin.Text == "Profile")
+            {
+                Smile_Profile profile = new Smile_Profile();
+                profile.Show();
+                this.Hide();
+            }
         }
 
         private void btnSmile_Click(object sender, EventArgs e)
@@ -68,6 +77,7 @@ namespace Smile
             if (UserAccount.logedUser != null)
             {
                 txtWelcome.Text = UserAccount.logedUser.islogin == "true" ? "Welcome, " + UserAccount.logedUser.Name + "!" : "Welcome!";
+                btnLogin.Text = UserAccount.logedUser.islogin == "true" ? "Profile" : "Login";
             }
         }
 
