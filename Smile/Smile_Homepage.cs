@@ -45,6 +45,7 @@ namespace Smile
 
         private void btnEmote_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Please fill out the questionnaire to check your mood today");
             Smile_Questionnaire questions = new Smile_Questionnaire();
             questions.Show();
             this.Hide();

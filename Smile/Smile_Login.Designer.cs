@@ -43,14 +43,14 @@ namespace Smile
             // 
             // tbUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(373, 178);
+            this.tbUsername.Location = new System.Drawing.Point(23, 87);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(206, 20);
             this.tbUsername.TabIndex = 0;
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(373, 203);
+            this.tbPassword.Location = new System.Drawing.Point(23, 112);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(206, 20);
             this.tbPassword.TabIndex = 1;
@@ -60,7 +60,7 @@ namespace Smile
             // 
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Location = new System.Drawing.Point(373, 239);
+            this.btnSignIn.Location = new System.Drawing.Point(23, 148);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(206, 25);
             this.btnSignIn.TabIndex = 2;
@@ -75,7 +75,7 @@ namespace Smile
             this.btnNewAccount.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNewAccount.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Bold);
             this.btnNewAccount.ForeColor = System.Drawing.Color.White;
-            this.btnNewAccount.Location = new System.Drawing.Point(410, 267);
+            this.btnNewAccount.Location = new System.Drawing.Point(60, 176);
             this.btnNewAccount.Name = "btnNewAccount";
             this.btnNewAccount.Size = new System.Drawing.Size(137, 16);
             this.btnNewAccount.TabIndex = 3;
@@ -88,7 +88,7 @@ namespace Smile
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
             this.label1.Font = new System.Drawing.Font("Futura Md BT", 18F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(437, 141);
+            this.label1.Location = new System.Drawing.Point(81, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 29);
             this.label1.TabIndex = 4;
@@ -111,7 +111,12 @@ namespace Smile
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(58)))), ((int)(((byte)(89)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btnNewAccount);
+            this.panel1.Controls.Add(this.btnSignIn);
+            this.panel1.Controls.Add(this.tbUsername);
+            this.panel1.Controls.Add(this.tbPassword);
             this.panel1.Location = new System.Drawing.Point(350, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 250);
@@ -138,11 +143,6 @@ namespace Smile
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(912, 493);
             this.Controls.Add(this.btnSmile);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnNewAccount);
-            this.Controls.Add(this.btnSignIn);
-            this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.tbUsername);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
