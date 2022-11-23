@@ -158,7 +158,8 @@ namespace Smile
                 mPersistence = new MoodPersistence();
 
                 confirmFinish();
-                var result = new QResult
+
+                QResult.result = new QResult
                 {
                     Userid = UserAccount.logedUser.islogin == "true" ? UserAccount.logedUser.Id : "",
                     Date = DateTime.Now,
@@ -168,7 +169,6 @@ namespace Smile
                     Persistence = mPersistence,
                     Suggest = QResult.getSuggest()
                 };
-                QResult.result = result;
 
                 if(UserAccount.logedUser.islogin == "true")
                 {
@@ -855,6 +855,11 @@ namespace Smile
             {
                 mPersistence.addPoint(deg, trait);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
